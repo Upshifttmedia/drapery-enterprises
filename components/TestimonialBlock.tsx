@@ -11,7 +11,7 @@ interface TestimonialBlockProps {
 }
 
 export default function TestimonialBlock({ quote, client, city, light = false }: TestimonialBlockProps) {
-  const ref = useRef<HTMLElement>(null)
+  const ref = useRef<HTMLQuoteElement>(null)
   const isInView = useInView(ref, { once: true, margin: '-10% 0px' })
 
   return (

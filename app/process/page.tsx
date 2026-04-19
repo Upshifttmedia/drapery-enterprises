@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import type { CSSProperties } from 'react'
 import Image from 'next/image'
 import HeroSection from '@/components/HeroSection'
 import SectionLabel from '@/components/SectionLabel'
@@ -157,7 +156,7 @@ export default function ProcessPage() {
                 key={i}
                 delay={0.05}
                 className="grid grid-cols-1 md:grid-cols-[80px_1fr_1fr] gap-6 md:gap-12 py-10 md:py-12"
-                style={{ borderTop: '1px solid rgba(250, 250, 248, 0.08)' } as CSSProperties}
+                style={{ borderTop: '1px solid rgba(250, 250, 248, 0.08)' }}
               >
                 <div className="flex md:flex-col gap-4 items-start">
                   <span
@@ -227,7 +226,7 @@ export default function ProcessPage() {
                 key={i}
                 delay={i * 0.06}
                 className="py-8"
-                style={{ borderTop: '1px solid var(--rule)' } as CSSProperties}
+                style={{ borderTop: '1px solid var(--rule)' }}
               >
                 <h3 className="font-cormorant font-light text-charcoal text-xl md:text-2xl mb-3">
                   {q}

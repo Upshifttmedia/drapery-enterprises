@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -57,19 +56,13 @@ export default function Nav() {
         style={scrolled ? { borderBottom: '1px solid var(--rule)' } : {}}
       >
         <div className="max-w-8xl mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
-          <Link href="/" className="relative z-10 flex items-center" aria-label="Drapery Enterprises — Home">
-            <Image
-              src="/images/logo.jpg"
-              alt="Drapery Enterprises — Since 1948, From Inspiration to Installation"
-              width={52}
-              height={52}
-              className={`transition-all duration-300 ${
-                scrolled
-                  ? 'mix-blend-multiply opacity-90'
-                  : '[filter:invert(1)_brightness(2)] opacity-90'
-              }`}
-              priority
-            />
+          <Link
+            href="/"
+            className={`font-cormorant text-xl md:text-2xl font-light tracking-[0.06em] relative z-10 transition-colors duration-300 ${
+              scrolled ? 'text-charcoal' : 'text-off-white'
+            }`}
+          >
+            Drapery Enterprises
           </Link>
 
           <nav className="hidden md:flex items-center gap-8" aria-label="Primary navigation">

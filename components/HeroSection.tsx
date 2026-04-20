@@ -17,6 +17,8 @@ interface HeroSectionProps {
   minHeight?: string
   /** CSS object-position for the hero image, e.g. 'center top', '50% 30%'. Defaults to 'center center'. */
   objectPosition?: string
+  /** Optional separate image for mobile (below md breakpoint). Falls back to imageSrc if not provided. */
+  imageSrcMobile?: string
 }
 
 export default function HeroSection({
@@ -29,6 +31,7 @@ export default function HeroSection({
   ctaHref = '/contact',
   minHeight = 'min-h-screen',
   objectPosition = 'center center',
+  imageSrcMobile,
 }: HeroSectionProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
@@ -46,13 +49,26 @@ export default function HeroSection({
     >
       {/* Parallax image layer */}
       <motion.div className="absolute inset-0 scale-110" style={{ y }}>
+        {/* Mobile image — shown below md, hidden at md+ */}
+        {imageSrcMobile && (
+          <Image
+            src={imageSrcMobile}
+            alt={imageAlt}
+            fill
+            priority
+            quality={90}
+            className="object-cover object-center md:hidden"
+            sizes="100vw"
+          />
+        )}
+        {/* Desktop image — hidden below md, shown at md+ */}
         <Image
           src={imageSrc}
           alt={imageAlt}
           fill
           priority
           quality={90}
-          className="object-cover"
+          className={`object-cover ${imageSrcMobile ? 'hidden md:block' : ''}`}
           style={{ objectPosition }}
           sizes="100vw"
         />

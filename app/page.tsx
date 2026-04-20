@@ -78,6 +78,7 @@ export default function HomePage() {
       {/* ─── 1. Hero ──────────────────────────────────────────── */}
       <HeroSection
         imageSrc="/images/hero/hero-01.jpg"
+        imageSrcMobile="/images/hero/hero-04.jpg"
         imageAlt="Sheer white drapery panels framing floor-to-ceiling doors open to a coastal waterfront view — a light-filled living room composed around the window"
         objectPosition="center 30%"
         headline="Every room has a moment waiting to be made."

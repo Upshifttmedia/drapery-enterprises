@@ -49,29 +49,33 @@ export default function HeroSection({
     >
       {/* Parallax image layer */}
       <motion.div className="absolute inset-0 scale-110" style={{ y }}>
-        {/* Mobile image — shown below md, hidden at md+ */}
+        {/* Mobile image — shown below md breakpoint only */}
         {imageSrcMobile && (
+          <div className="absolute inset-0 md:hidden">
+            <Image
+              src={imageSrcMobile}
+              alt={imageAlt}
+              fill
+              priority
+              quality={90}
+              className="object-cover object-center"
+              sizes="100vw"
+            />
+          </div>
+        )}
+        {/* Desktop image — full size always, hidden on mobile when a mobile image is set */}
+        <div className={`absolute inset-0 ${imageSrcMobile ? 'hidden md:block' : ''}`}>
           <Image
-            src={imageSrcMobile}
+            src={imageSrc}
             alt={imageAlt}
             fill
             priority
             quality={90}
-            className="object-cover object-center md:hidden"
+            className="object-cover"
+            style={{ objectPosition }}
             sizes="100vw"
           />
-        )}
-        {/* Desktop image — hidden below md, shown at md+ */}
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          fill
-          priority
-          quality={90}
-          className={`object-cover ${imageSrcMobile ? 'hidden md:block' : ''}`}
-          style={{ objectPosition }}
-          sizes="100vw"
-        />
+        </div>
         {/* Layered gradient: subtle vignette at top, strong fade at bottom for text legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/75 via-charcoal/15 to-charcoal/20" />
         {/* Top overlay for nav legibility — always on */}

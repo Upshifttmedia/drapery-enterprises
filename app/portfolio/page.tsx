@@ -14,7 +14,7 @@ const projects = [
   {
     src: '/images/portfolio/portfolio-01.jpg',
     alt: 'Custom floor-to-ceiling linen drapery panels in a Santa Cruz coastal residence — natural linen, unlacquered brass hardware',
-    category: 'Window Treatments',
+    category: 'Window Coverings',
     location: 'Santa Cruz, CA',
     detail: 'Linen drapery · Brass hardware · Motorized',
   },
@@ -28,14 +28,14 @@ const projects = [
   {
     src: '/images/portfolio/portfolio-03.jpg',
     alt: 'Roman shades in a heritage stripe linen, Carmel Valley home office with built-in shelving',
-    category: 'Window Treatments',
+    category: 'Window Coverings',
     location: 'Carmel Valley, CA',
     detail: 'Roman shades · Stripe linen · Cordless',
   },
   {
     src: '/images/portfolio/portfolio-04.jpg',
     alt: 'Custom silk drapery with hand-sewn leading edges in a Palo Alto formal living room',
-    category: 'Window Treatments',
+    category: 'Window Coverings',
     location: 'Palo Alto, CA',
     detail: 'Silk drapery · Goblet pleat · Iron hardware',
   },
@@ -49,14 +49,14 @@ const projects = [
   {
     src: '/images/portfolio/portfolio-06.jpg',
     alt: 'Sheer linen panels with solar shade undertreatment in a modern Santa Cruz kitchen',
-    category: 'Window Treatments',
+    category: 'Window Coverings',
     location: 'Santa Cruz, CA',
     detail: 'Linen sheers · Solar shades · Motorized',
   },
   {
     src: '/images/portfolio/portfolio-07.jpg',
     alt: 'Velvet drapery in deep forest green for a Carmel-by-the-Sea library — custom rod and finials',
-    category: 'Window Treatments',
+    category: 'Window Coverings',
     location: 'Carmel-by-the-Sea, CA',
     detail: 'Velvet drapery · Custom forged-iron rod',
   },
@@ -70,7 +70,7 @@ const projects = [
   {
     src: '/images/portfolio/portfolio-09.jpg',
     alt: 'Relaxed roman shades in a natural linen blend for a Big Sur coastal retreat — cordless lift',
-    category: 'Window Treatments',
+    category: 'Window Coverings',
     location: 'Big Sur, CA',
     detail: 'Roman shades · Natural linen · Cordless',
   },
@@ -92,7 +92,7 @@ export default function PortfolioPage() {
         aria-labelledby="portfolio-heading"
       >
         <FadeUp className="max-w-8xl mx-auto">
-          <SectionLabel>Selected Work</SectionLabel>
+          <SectionLabel>Gallery</SectionLabel>
           <h1
             id="portfolio-heading"
             className="font-cormorant font-light text-charcoal text-5xl md:text-6xl lg:text-7xl leading-tight max-w-2xl"

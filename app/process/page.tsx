@@ -18,7 +18,7 @@ const steps = [
     title: 'It begins with a conversation.',
     duration: 'Day 1',
     description:
-      'Reach out through our contact form or by phone. We ask a few simple questions — your room, your timeline, your sense of what you\'re looking for. Within 24 hours, we schedule your consultation.',
+      'Reach out through our contact form or by phone. We ask a few simple questions — your room, your timeline, your sense of what you\'re looking for. Within 48 hours, we schedule your consultation.',
     detail:
       'There is no obligation at this stage, and no rush. We want to understand whether we\'re the right fit for your project before you invest any time.',
   },
@@ -30,7 +30,7 @@ const steps = [
     description:
       'We come to you. In your home, in your light, we measure your windows, observe your architecture, and listen to how you want the room to feel. We bring nothing to sell — only to understand.',
     detail:
-      'Most consultations take 60 to 90 minutes. For window treatments, we measure every window to the millimeter. For bedding, we assess the room, the bed, and the light before we make any recommendations.',
+      'Most consultations take 60 to 90 minutes. For window coverings, we measure every window to the millimeter. For bedding, we assess the room, the bed, and the light before we make any recommendations.',
   },
   {
     number: '03',
@@ -60,7 +60,7 @@ const steps = [
     description:
       'We install every piece ourselves. Window treatments are mounted, pressed, and dressed. Bedding is laid and styled in the room. We don\'t leave until everything is exactly right.',
     detail:
-      'For window treatments, this includes hanging hardware, steaming panels, and adjusting every break and hem. For bedding, we dress the full ensemble before we leave.',
+      'For window coverings, this includes hanging hardware, steaming panels, and adjusting every break and hem. For bedding, we dress the full ensemble before we leave.',
   },
   {
     number: '06',
@@ -251,7 +251,7 @@ export default function ProcessPage() {
           </h2>
           <p className="font-jost font-light text-muted text-sm leading-relaxed mb-10 max-w-xs mx-auto">
             The first step is a conversation. No obligation, no rush.
-            We&rsquo;ll be in touch within 24 hours.
+            We&rsquo;ll be in touch within 48 hours.
           </p>
           <Button href="/contact" variant="primary">
             Begin a Private Consultation

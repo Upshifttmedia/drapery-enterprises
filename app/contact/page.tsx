@@ -112,7 +112,7 @@ export default function ContactPage() {
                   Response Time
                 </p>
                 <p className="font-jost font-light text-sm text-charcoal leading-relaxed">
-                  We respond to all inquiries within 24 hours, typically sooner.
+                  We respond to all inquiries within 48 hours, typically sooner.
                   Consultations are scheduled Monday through Saturday.
                 </p>
               </div>

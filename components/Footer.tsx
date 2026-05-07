@@ -13,7 +13,7 @@ export default function Footer() {
               Drapery Enterprises
             </p>
             <p className="font-jost font-light text-sm text-muted leading-relaxed max-w-xs mb-6">
-              A design atelier for bespoke window treatments and bedding couture.
+              A design atelier for bespoke window coverings and bedding couture.
               Every piece fabricated by hand in our Santa Cruz workroom.
             </p>
             <address className="not-italic">
@@ -39,12 +39,11 @@ export default function Footer() {
             </p>
             <nav className="flex flex-col gap-3" aria-label="Footer navigation">
               {[
-                { href: '/windows', label: 'Window Treatments' },
+                { href: '/windows', label: 'Window Coverings' },
                 { href: '/bedding', label: 'Bedding Couture' },
                 { href: '/process', label: 'The Process' },
                 { href: '/portfolio', label: 'Portfolio' },
                 { href: '/about', label: 'Our Story' },
-                { href: '/trade', label: 'Trade Program' },
               ].map(({ href, label }) => (
                 <Link
                   key={href}
@@ -63,7 +62,7 @@ export default function Footer() {
               Begin a Project
             </p>
             <p className="font-jost font-light text-sm text-muted leading-relaxed mb-8 max-w-[200px]">
-              Private consultations available throughout the Santa Cruz, Monterey Bay, and Bay Area corridor.
+              Tell us about your project
             </p>
             <Link
               href="/contact"

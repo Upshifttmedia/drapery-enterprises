@@ -19,7 +19,7 @@ const portfolioPreview = [
   {
     src: '/images/portfolio/portfolio-01.jpg',
     alt: 'Custom linen drapery panels, floor-to-ceiling, in a Santa Cruz coastal residence',
-    label: 'Window Treatments',
+    label: 'Window Coverings',
   },
   {
     src: '/images/portfolio/portfolio-02.jpg',
@@ -29,12 +29,12 @@ const portfolioPreview = [
   {
     src: '/images/portfolio/portfolio-03.jpg',
     alt: 'Tailored roman shades in a heritage stripe linen, Carmel home office',
-    label: 'Window Treatments',
+    label: 'Window Coverings',
   },
   {
     src: '/images/portfolio/portfolio-04.jpg',
     alt: 'Custom silk drapery with hand-sewn leading edges in a Palo Alto living room',
-    label: 'Window Treatments',
+    label: 'Window Coverings',
   },
   {
     src: '/images/portfolio/portfolio-05.jpg',
@@ -44,21 +44,21 @@ const portfolioPreview = [
   {
     src: '/images/portfolio/portfolio-06.jpg',
     alt: 'Sheer linen panels with solar shade undertreatment in a modern Santa Cruz kitchen',
-    label: 'Window Treatments',
+    label: 'Window Coverings',
   },
 ]
 
 const processSteps = [
   {
     number: '01',
-    label: 'Consult',
+    label: 'Research',
     title: 'A conversation about your space.',
     description:
       'Every project begins with a private consultation — in your home, at your convenience. We listen first. We observe light, proportion, architecture, and how you live in a room.',
   },
   {
     number: '02',
-    label: 'Design',
+    label: 'Create',
     title: 'Composed for your room.',
     description:
       'We present curated fabric selections, custom hardware options, and detailed workroom drawings. Nothing is generic. Every specification is written for your exact windows and your life.',
@@ -68,7 +68,7 @@ const processSteps = [
     label: 'Install',
     title: 'Finished with precision.',
     description:
-      "Your pieces are fabricated in our Santa Cruz workroom and installed by our team. We don\u2019t leave until every pleat falls true, every panel breaks at the floor just so.",
+      "Your pieces are fabricated in our Santa Cruz workroom and installed by our team.",
   },
 ]
 
@@ -82,7 +82,7 @@ export default function HomePage() {
         imageAlt="Sheer white drapery panels framing floor-to-ceiling doors open to a coastal waterfront view — a light-filled living room composed around the window"
         objectPosition="center 30%"
         headline="Every room has a moment waiting to be made."
-        subheadline="Bespoke window treatments and bedding couture — designed for your space, crafted by hand."
+        subheadline="Bespoke window coverings and bedding couture — from inspiration to installation."
         ctaText="Begin a Private Consultation"
         ctaHref="/contact"
       />
@@ -102,7 +102,7 @@ export default function HomePage() {
           <span className="block w-8 h-px bg-brass mx-auto mt-12" aria-hidden="true" />
           <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed mt-12 max-w-xl mx-auto">
             Drapery Enterprises is a design atelier based in Santa Cruz, California. We fabricate
-            custom window treatments and bedding couture for clients who understand that the details
+            custom window coverings and bedding couture for clients who understand that the details
             are the design — and that no two rooms are alike.
           </p>
         </FadeUp>
@@ -114,17 +114,20 @@ export default function HomePage() {
           Our Services
         </h2>
         <ServiceCard
-          label="Window Treatments"
+          label="Window Coverings"
           headline="Windows that define a room."
-          description="Custom drapery, roman shades, sheers, and hardware — every detail considered, every panel fabricated to order. We work in linen, silk, wool, and performance fabrics sourced from the finest textile houses in Europe."
+          description="Custom drapery, roman shades, sheers, and hardware — every detail considered, every panel fabricated to order."
           details={[
-            'Custom drapery & curtains',
+            'Custom drapery, curtains & sheers',
             'Roman & woven shades',
-            'Sheers & solar shades',
-            'Custom hardware & rods',
-            'Motorized & smart home integration',
+            'Solar shades',
+            'Drapery Hardware',
+            'Somfy Motorization',
+            'Lutron Automation',
+            'Hunter Douglas Blinds & Shades',
+            'Conrad',
           ]}
-          ctaText="Explore Window Treatments"
+          ctaText="Explore Window Coverings"
           ctaHref="/windows"
           imageSrc="/images/windows/windows-01.jpg"
           imageAlt="Custom linen drapery panels with hand-stitched details in a coastal living room"
@@ -135,10 +138,9 @@ export default function HomePage() {
           description="Bespoke duvets, coverlets, shams, and pillow arrangements — composed as a complete textile statement. Every piece tailored to your bed's exact proportions and your sense of beauty."
           details={[
             'Custom duvet covers & inserts',
-            'Tailored coverlets & quilts',
-            'Bespoke shams & pillowcases',
-            'Custom throw pillows & bolsters',
-            'European & Belgian linen sourcing',
+            'Bedspreads',
+            'Pillow shams',
+            'Custom throw pillows & cushions — Interior & Exterior',
           ]}
           ctaText="Explore Bedding Couture"
           ctaHref="/bedding"
@@ -209,7 +211,72 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 5. Process ───────────────────────────────────────── */}
+      {/* ─── 5. Gallery ───────────────────────────────────────── */}
+      <section
+        className="py-24 md:py-32 px-6 md:px-10 bg-linen"
+        aria-labelledby="gallery-heading"
+      >
+        <div className="max-w-8xl mx-auto">
+          <FadeUp className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+              <SectionLabel>Gallery</SectionLabel>
+              <h2
+                id="gallery-heading"
+                className="font-cormorant font-light text-charcoal text-4xl md:text-5xl leading-tight"
+              >
+                Work composed
+                <br />
+                <em className="italic">for real rooms.</em>
+              </h2>
+            </div>
+            <Link
+              href="/portfolio"
+              className="font-jost font-medium text-[0.6875rem] tracking-[0.18em] uppercase text-brass hover:text-charcoal transition-colors duration-200 flex items-center gap-3 flex-shrink-0"
+            >
+              View All Work
+              <span className="block w-6 h-px bg-current" aria-hidden="true" />
+            </Link>
+          </FadeUp>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+            {[
+              { src: '/images/portfolio/portfolio-07.jpg', alt: 'Velvet drapery in deep forest green for a Carmel-by-the-Sea library — custom rod and finials', label: 'Window Coverings' },
+              { src: '/images/portfolio/portfolio-08.jpg', alt: 'Complete bedroom ensemble — custom drapery, bedding couture, and custom throw pillows in a Monterey master suite', label: 'Windows & Bedding' },
+              { src: '/images/portfolio/portfolio-09.jpg', alt: 'Relaxed roman shades in a natural linen blend for a Big Sur coastal retreat — cordless lift', label: 'Window Coverings' },
+              { src: '/images/portfolio/portfolio-10.jpg', alt: 'Bespoke coverlet and custom Euro shams in a Carmel guest suite — washed Belgian linen ensemble', label: 'Bedding Couture' },
+              { src: '/images/portfolio/portfolio-01.jpg', alt: 'Custom floor-to-ceiling linen drapery panels in a Santa Cruz coastal residence', label: 'Window Coverings' },
+              { src: '/images/portfolio/portfolio-05.jpg', alt: 'Layered bedding with custom duvet, hand-quilted coverlet, and European square shams', label: 'Bedding Couture' },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="relative h-[260px] md:h-[360px] lg:h-[450px] overflow-hidden group bg-stone"
+              >
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.04]"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <span className="font-jost font-medium text-[0.625rem] tracking-[0.2em] uppercase text-off-white">
+                    {item.label}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center mt-14">
+            <Link
+              href="/portfolio"
+              className="font-jost font-medium text-[0.6875rem] tracking-[0.2em] uppercase px-8 py-4 border border-charcoal text-charcoal hover:bg-charcoal hover:text-off-white transition-all duration-300"
+            >
+              View the Full Portfolio
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── 6. Process ───────────────────────────────────────── */}
       <section
         className="py-24 md:py-36 px-6 md:px-10 bg-charcoal"
         aria-labelledby="process-heading"
@@ -237,7 +304,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 6. About teaser ──────────────────────────────────── */}
+      {/* ─── 7. About teaser ──────────────────────────────────── */}
       <section className="bg-linen" aria-labelledby="about-teaser-heading">
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[560px]">
           <FadeUp className="relative min-h-[420px] lg:min-h-full overflow-hidden bg-stone">
@@ -279,7 +346,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 7. Testimonial ───────────────────────────────────── */}
+      {/* ─── 8. Testimonial ───────────────────────────────────── */}
       <section
         className="py-24 md:py-36 px-6 md:px-10 bg-stone"
         aria-label="Client testimonial"
@@ -293,7 +360,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 8. Trade callout ─────────────────────────────────── */}
+      {/* ─── 9. Trade callout ─────────────────────────────────── */}
       <section
         className="py-16 md:py-20 px-6 md:px-10 bg-linen"
         style={{ borderTop: '1px solid var(--rule)', borderBottom: '1px solid var(--rule)' }}
@@ -318,7 +385,7 @@ export default function HomePage() {
         </FadeUp>
       </section>
 
-      {/* ─── 9. Closing CTA ───────────────────────────────────── */}
+      {/* ─── 10. Closing CTA ──────────────────────────────────── */}
       <section
         className="py-32 md:py-44 px-6 md:px-10 bg-charcoal text-center"
         aria-label="Consultation call to action"

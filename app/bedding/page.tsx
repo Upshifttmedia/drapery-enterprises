@@ -216,7 +216,7 @@ export default function BeddingPage() {
               It is a cohesive space where every element belongs.
             </p>
             <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed max-w-sm">
-              We offer window treatments and bedding couture as a unified service for clients
+              We offer window coverings and bedding couture as a unified service for clients
               who want their bedroom composed from the ground up. One process. One point of
               contact. One room that feels entirely considered.
             </p>

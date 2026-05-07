@@ -44,7 +44,7 @@ export default function AboutPage() {
         imageAlt="The hands of our maker measuring and cutting fabric in the Drapery Enterprises atelier in Santa Cruz, California"
         label="The Studio"
         headline="Made by hand. Designed for your room."
-        subheadline="A Santa Cruz atelier for custom window treatments and bedding couture."
+        subheadline="A Santa Cruz atelier for custom window coverings and bedding couture."
         minHeight="min-h-[70vh]"
       />
 
@@ -80,7 +80,7 @@ export default function AboutPage() {
               never given the attention they deserved.
             </p>
             <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed mb-5 max-w-sm">
-              Every window treatment and bedding piece that leaves this workroom is designed
+              Every window covering and bedding piece that leaves this workroom is designed
               with a specific room in mind. Not a general one. Not an ideal one. Yours.
             </p>
             <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed max-w-sm">

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Button from './Button'
 
 const projectTypes = [
-  'Window Treatments',
+  'Window Coverings',
   'Bedding Couture',
   'Window & Bedding Together',
   'Trade / Designer Project',
@@ -51,7 +51,7 @@ export default function InquiryForm() {
           Thank you.
         </h3>
         <p className="font-jost font-light text-muted text-sm leading-relaxed max-w-sm mx-auto">
-          We&apos;ve received your inquiry. We&apos;ll be in touch within 24 hours to schedule
+          We&apos;ve received your inquiry. We&apos;ll be in touch within 48 hours to schedule
           your private consultation.
         </p>
       </div>
@@ -182,7 +182,7 @@ export default function InquiryForm() {
           Request a Consultation
         </Button>
         <p className="font-jost font-light text-xs text-muted text-center mt-5 leading-relaxed">
-          No obligation. No rush. We&apos;ll be in touch within 24 hours.
+          No obligation. No rush. We&apos;ll be in touch within 48 hours.
         </p>
       </div>
     </form>

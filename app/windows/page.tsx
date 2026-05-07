@@ -68,7 +68,7 @@ export default function WindowsPage() {
       <HeroSection
         imageSrc="/images/windows/windows-01.jpg"
         imageAlt="Custom linen drapery in a Monterey Bay coastal home — floor-to-ceiling panels with hand-stitched leading edges"
-        label="Window Treatments"
+        label="Window Coverings"
         headline="A window is an architectural moment. Treat it as one."
         subheadline="Custom drapery, shades, and sheers — composed for proportion, light, and your singular view."
         ctaText="Begin a Private Consultation"
@@ -86,7 +86,7 @@ export default function WindowsPage() {
             We consider the window before the fabric.
           </h2>
           <p className="font-jost font-light text-muted text-base leading-relaxed mb-5">
-            Most window treatments are chosen for style. Ours are designed for the room. We begin
+            Most window coverings are chosen for style. Ours are designed for the room. We begin
             with light — how it enters, how it moves through the day, how it changes with the
             season. Then proportion. Then architecture. Then fabric.
           </p>

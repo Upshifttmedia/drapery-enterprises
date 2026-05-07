@@ -10,8 +10,7 @@ const navLinks = [
   { href: '/bedding', label: 'Bedding' },
   { href: '/process', label: 'Process' },
   { href: '/portfolio', label: 'Portfolio' },
-  { href: '/about', label: 'Studio' },
-  { href: '/trade', label: 'Trade' },
+  { href: '/about', label: 'Our Story' },
 ]
 
 // Pages with no full-bleed hero — nav starts in its scrolled (dark) state

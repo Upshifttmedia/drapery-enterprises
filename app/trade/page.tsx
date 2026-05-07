@@ -14,16 +14,6 @@ export const metadata: Metadata = {
 
 const benefits = [
   {
-    title: 'Trade Pricing',
-    description:
-      'Registered trade professionals receive a minimum 20% discount on all fabrication. Discount structure scales with project volume.',
-  },
-  {
-    title: 'Net 30 Terms',
-    description:
-      'Credit terms available for established trade accounts. We understand how design projects invoice, and we work within your process.',
-  },
-  {
     title: 'Dedicated Communication',
     description:
       'A single point of contact for every project. Clear lead times, proactive updates, and direct access — no chasing invoices or installation confirmations.',
@@ -31,7 +21,7 @@ const benefits = [
   {
     title: 'Sample Program',
     description:
-      'Full fabric sample library available to trade accounts. Samples shipped same day for active projects. Returnable within 30 days.',
+      'Full fabric sample library available to trade accounts. Samples shipped same day for active projects.',
   },
   {
     title: 'Workroom Drawings',
@@ -69,7 +59,7 @@ export default function TradePage() {
         label="Trade Program"
         headline="A workroom your clients will be proud of."
         subheadline="We work with interior designers, architects, and luxury builders across the Central Coast. Reliable. Precise. Designed for professional partnerships."
-        ctaText="Apply for a Trade Account"
+        ctaText="Begin a Trade Partnership"
         ctaHref="#trade-form"
         minHeight="min-h-[70vh]"
       />
@@ -86,7 +76,7 @@ export default function TradePage() {
           </h2>
           <p className="font-jost font-light text-muted text-base leading-relaxed mb-5">
             We partner with interior designers, architects, and builders who hold their vendors to
-            the same standard they hold themselves. If a window treatment reflects on your design,
+            the same standard they hold themselves. If a window covering reflects on your design,
             it reflects on us — and we take that seriously.
           </p>
           <p className="font-jost font-light text-muted text-base leading-relaxed">
@@ -143,7 +133,7 @@ export default function TradePage() {
             <p className="font-jost font-light text-muted text-base leading-relaxed mb-5 max-w-sm">
               Our trade partners range from solo interior designers to multi-principal firms,
               architect-led residential practices, and luxury spec builders who spec custom
-              window treatments into their builds.
+              window coverings into their builds.
             </p>
             <p className="font-jost font-light text-muted text-base leading-relaxed max-w-sm">
               We are not the right fit for every trade account — we work best with partners
@@ -235,7 +225,7 @@ export default function TradePage() {
             </h2>
             <p className="font-jost font-light text-muted text-sm leading-relaxed max-w-sm mx-auto">
               Tell us about your practice and your upcoming projects. We respond to all trade
-              inquiries within one business day.
+              inquiries within 48 hours.
             </p>
           </FadeUp>
           <InquiryForm />

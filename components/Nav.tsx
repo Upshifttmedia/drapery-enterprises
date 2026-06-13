@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -55,13 +56,15 @@ export default function Nav() {
         style={scrolled ? { borderBottom: '1px solid var(--rule)' } : {}}
       >
         <div className="max-w-8xl mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
-          <Link
-            href="/"
-            className={`font-cormorant text-xl md:text-2xl font-light tracking-[0.06em] relative z-10 transition-colors duration-300 ${
-              scrolled ? 'text-charcoal' : 'text-off-white'
-            }`}
-          >
-            Drapery Enterprises
+          <Link href="/" className="relative z-10">
+            <Image
+              src="/images/DE_logo.png"
+              alt="Drapery Enterprises"
+              height={48}
+              width={200}
+              style={{ height: 48, width: 'auto' }}
+              priority
+            />
           </Link>
 
           <nav className="hidden md:flex items-center gap-8" aria-label="Primary navigation">

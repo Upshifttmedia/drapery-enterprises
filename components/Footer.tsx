@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -9,9 +10,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <p className="font-cormorant text-2xl font-light tracking-[0.06em] mb-4">
-              Drapery Enterprises
-            </p>
+            <div className="mb-4">
+              <Image
+                src="/images/DE_logo.png"
+                alt="Drapery Enterprises"
+                height={40}
+                width={167}
+                style={{ height: 40, width: 'auto' }}
+              />
+            </div>
             <p className="font-jost font-light text-sm text-muted leading-relaxed max-w-xs mb-6">
               A design atelier for bespoke window coverings and bedding couture.
               Every piece fabricated by hand in our Santa Cruz workroom.

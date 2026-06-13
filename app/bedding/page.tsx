@@ -333,9 +333,9 @@ export default function BeddingPage() {
       >
         <div className="max-w-8xl mx-auto">
           <TestimonialBlock
-            quote="Our bedroom is the room we spend the most time in, and we've never loved it the way we do now. The bedding she designed is a better version of everything we imagined."
-            client="A. Nakamura"
-            city="Los Altos Hills, CA"
+            quote="When it comes to draperies, shades, pillows, and shams, there is no better place to go than Drapery Enterprises. Our home remodel was filled with challenging needs and design ideas we wanted to implement. No matter what the project was, Drapery Enterprises worked with us to make it work, and brought with it the type of quality care and customized attention to detail that you rarely see anymore. I could not be happier with all of their work!"
+            client="Caroline Westington"
+            city="Small Business Owner"
           />
         </div>
       </section>

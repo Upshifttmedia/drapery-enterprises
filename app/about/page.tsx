@@ -228,9 +228,9 @@ export default function AboutPage() {
       >
         <div className="max-w-8xl mx-auto">
           <TestimonialBlock
-            quote="I've worked with ateliers in New York and London. What she brings to a room — the eye, the precision, the patience — is rare anywhere. The fact that she's local feels like a privilege."
-            client="D. Cavanaugh, Architect"
-            city="San Francisco, CA"
+            quote="Our relationship with Drapery Enterprises goes back over 70 years. My father worked with the founders in the early 50's, and I continued to work with Drapery Enterprises when Wendi and her parents took over the business in 2003. For over 80 years, Martino Interiors' business philosophy has been to be loyal to our suppliers and workrooms who we trust and who provide quality products. Wendi and her staff have continually produced beautiful window coverings and provided excellent customer service. I feel very fortunate that over 7 decades we've been able to continue our relationship with Wendi and Drapery Enterprises."
+            client="Ron Martino"
+            city="Martino Interiors, Los Gatos"
           />
         </div>
       </section>

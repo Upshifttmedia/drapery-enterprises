@@ -239,9 +239,9 @@ export default function WindowsPage() {
       >
         <div className="max-w-8xl mx-auto">
           <TestimonialBlock
-            quote="I've worked with workrooms across the country. None of them approached a window the way she does — as a design problem worth solving, not a specification to be fulfilled."
-            client="Rebecca P., Interior Designer"
-            city="Pebble Beach, CA"
+            quote="Our relationship with Drapery Enterprises goes back over 70 years. My father worked with the founders in the early 50's, and I continued to work with Drapery Enterprises when Wendi and her parents took over the business in 2003. For over 80 years, Martino Interiors' business philosophy has been to be loyal to our suppliers and workrooms who we trust and who provide quality products. Wendi and her staff have continually produced beautiful window coverings and provided excellent customer service. I feel very fortunate that over 7 decades we've been able to continue our relationship with Wendi and Drapery Enterprises."
+            client="Ron Martino"
+            city="Martino Interiors, Los Gatos"
           />
         </div>
       </section>

@@ -353,9 +353,9 @@ export default function HomePage() {
       >
         <div className="max-w-8xl mx-auto">
           <TestimonialBlock
-            quote="She understood our home before she measured a single window. The drapery she designed changed the entire feeling of the room — and we've lived here for twelve years."
-            client="M. & T. Holloway"
-            city="Carmel-by-the-Sea, CA"
+            quote="When it comes to draperies, shades, pillows, and shams, there is no better place to go than Drapery Enterprises. Our home remodel was filled with challenging needs and design ideas we wanted to implement. No matter what the project was, Drapery Enterprises worked with us to make it work, and brought with it the type of quality care and customized attention to detail that you rarely see anymore. I could not be happier with all of their work!"
+            client="Caroline Westington"
+            city="Small Business Owner"
           />
         </div>
       </section>

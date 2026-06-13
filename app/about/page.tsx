@@ -15,24 +15,19 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    title: 'Craft over speed.',
+    title: 'Research.',
     description:
-      'We take on fewer projects than we could. We believe the only way to produce work of this quality is to give every project the time it requires — and to resist the pressure to scale what cannot be scaled.',
+      'We connect with our clients and research what it takes to bring their designs to life. It\'s where the whole custom design process starts, with you!',
   },
   {
-    title: 'The room is the brief.',
+    title: 'Design.',
     description:
-      'We don\'t come to a consultation with solutions. We come to observe, to listen, and to understand — because the room itself will tell you what it needs, if you take the time to look.',
+      'The handcrafted, personal touch that comes with designing all of our drapery and soft goods interior design creations — this is our favorite part.',
   },
   {
-    title: 'Materials are not interchangeable.',
+    title: 'Create.',
     description:
-      'We source from mills and suppliers we trust, and we use materials that earn their place in a room. The right linen, the right hardware, the right thread. Nothing approximate.',
-  },
-  {
-    title: 'A limited practice by design.',
-    description:
-      'We work with a select number of clients each season. This is a choice, not a constraint. It ensures that every project — large or small — receives our full attention.',
+      'Design and installation go hand in hand, and we cover every part of the creation, design and installation process.',
   },
 ]
 
@@ -43,7 +38,7 @@ export default function AboutPage() {
         imageSrc="/images/about/about-01.jpg"
         imageAlt="The hands of our maker measuring and cutting fabric in the Drapery Enterprises atelier in Santa Cruz, California"
         label="The Studio"
-        headline="Made by hand. Designed for your room."
+        headline="A Window Into Drapery Enterprises"
         subheadline="A Santa Cruz atelier for custom window coverings and bedding couture."
         minHeight="min-h-[70vh]"
       />
@@ -65,27 +60,17 @@ export default function AboutPage() {
             className="flex flex-col justify-center px-8 md:px-14 lg:px-20 py-20 md:py-28"
           >
             <SectionLabel>The Maker</SectionLabel>
-            {/* TODO: Replace with owner's actual name */}
             <h2
               id="maker-heading"
               className="font-cormorant font-light text-charcoal text-4xl md:text-5xl leading-tight mb-6"
             >
-              Founded on the conviction
-              <br />
-              <em className="italic">that rooms remember what&rsquo;s made for them.</em>
+              Family Owned &amp; Operated
             </h2>
-            <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed mb-5 max-w-sm">
-              Drapery Enterprises was founded after years of watching beautiful spaces fall
-              short of their potential — not because of bad design, but because the details were
-              never given the attention they deserved.
-            </p>
-            <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed mb-5 max-w-sm">
-              Every window covering and bedding piece that leaves this workroom is designed
-              with a specific room in mind. Not a general one. Not an ideal one. Yours.
-            </p>
             <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed max-w-sm">
-              We are based in Santa Cruz, California. We have served clients across the Monterey
-              Bay and Bay Area corridor for over a decade.
+              Drapery Enterprises, Inc. first opened its doors in 1948 as a wholesale workroom.
+              Owned and operated by Wendi Strong, who works to bring fresh new ideas and spirit
+              to the business while maintaining the standards of superior workmanship and design
+              assistance that our customers have come to count on.
             </p>
           </FadeUp>
         </div>
@@ -137,8 +122,13 @@ export default function AboutPage() {
               id="values-heading"
               className="font-cormorant font-light text-charcoal text-4xl md:text-5xl leading-tight max-w-lg"
             >
-              The principles behind the practice.
+              Our Design Process
             </h2>
+            <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed mt-4 max-w-md">
+              Our family-owned business has lasted for generations, while keeping up with the
+              times and current innovation. We bring the handcrafted personal touch that only
+              a family business can deliver.
+            </p>
           </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-0">
             {values.map(({ title, description }, i) => (
@@ -168,17 +158,18 @@ export default function AboutPage() {
               id="workroom-heading"
               className="font-cormorant font-light text-off-white text-4xl md:text-5xl leading-tight mb-6"
             >
-              Santa Cruz, California.
-              <br />
-              <em className="italic text-brass">Built for precision.</em>
+              Wendi Strong
             </h2>
             <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed mb-5 max-w-sm">
-              Our workroom is where every piece is made — from the first cut to the final press.
-              We fabricate everything in-house. No outsourcing, no rush orders, no compromises.
+              With an extensive background in textiles, from the carpet industry, and also from
+              years of sewing, Wendi knows how to handle fabrics. She also attends numerous
+              national window-covering conferences annually. Currently a member of the WCAA
+              (Window Coverings Association of America), in the past she also served on the
+              board of the Northern California chapter.
             </p>
             <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed max-w-sm">
-              We serve the Santa Cruz and Monterey Bay corridor, the Peninsula, and the greater
-              Bay Area. For significant projects, we travel.
+              As the head of the company, she uses her experience to give our designers the
+              competitive edge they need to stay ahead of the competition.
             </p>
             <div className="mt-10">
               <address className="not-italic">

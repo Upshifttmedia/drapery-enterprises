@@ -53,7 +53,7 @@ export default function Nav() {
             ? 'bg-off-white/95 backdrop-blur-sm'
             : 'bg-transparent'
         }`}
-        style={scrolled ? { borderBottom: '1px solid var(--rule)' } : {}}
+        style={{ borderBottom: '1px solid', borderColor: scrolled ? 'var(--rule)' : 'transparent' }}
       >
         <div className="max-w-8xl mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
           <Link href="/" className="relative z-10">

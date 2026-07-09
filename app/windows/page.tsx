@@ -25,7 +25,7 @@ const treatments = [
     title: 'Roman Shades',
     description:
       'Flat, relaxed, or hobbled — roman shades offer architectural presence at the window. We fabricate in any fabric, with blackout or privacy lining, cord lift, cordless lift, or automated operation.',
-    imageSrc: '/images/windows/windows-03.jpg',
+    imageSrc: '/images/windows/roman-shades-new.jpg',
     imageAlt:
       'Tailored flat roman shade in a heritage stripe linen, mounted inside the window casement',
   },
@@ -33,7 +33,7 @@ const treatments = [
     title: 'Sheers & Casements',
     description:
       'The most underestimated layer in a room. A beautifully chosen sheer softens light, adds depth, and frames a view without hiding it.',
-    imageSrc: '/images/windows/windows-02.jpg',
+    imageSrc: '/images/windows/sheers-new.jpg',
     imageAlt:
       'Belgian linen sheer panels filtering afternoon light in a Santa Cruz living room',
   },
@@ -41,7 +41,7 @@ const treatments = [
     title: 'Cornice Boxes & Valances, Swags and Cascades',
     description:
       'Custom cornices are upholstered fabric on a board, always one of a kind. Built to suit, we can make them simple or fancy.',
-    imageSrc: '/images/windows/windows-01.jpg',
+    imageSrc: '/images/windows/cornices.jpg',
     imageAlt:
       'Custom cornice box and valance — upholstered fabric on a board, fabricated in the Drapery Enterprises Santa Cruz workroom',
   },

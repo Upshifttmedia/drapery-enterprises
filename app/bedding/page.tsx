@@ -61,7 +61,7 @@ export default function BeddingPage() {
   return (
     <>
       <HeroSection
-        imageSrc="/images/bedding/bedding-01.jpg"
+        imageSrc="/images/bedding/bedding-new.jpg"
         imageAlt="Bespoke linen bedding ensemble with custom shams and a hand-quilted coverlet in a Santa Cruz coastal bedroom"
         label="Bedding Couture"
         headline="The most private room in your home deserves the most considered design."

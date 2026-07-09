@@ -25,7 +25,7 @@ const treatments = [
     title: 'Roman Shades',
     description:
       'Flat, relaxed, or hobbled — roman shades offer architectural presence at the window. We fabricate in any fabric, with blackout or privacy lining, cord lift, cordless lift, or automated operation.',
-    imageSrc: '/images/windows/roman-shades-new.jpg',
+    imageSrc: '/images/windows/windows-03.jpg',
     imageAlt:
       'Tailored flat roman shade in a heritage stripe linen, mounted inside the window casement',
   },
@@ -41,7 +41,7 @@ const treatments = [
     title: 'Cornice Boxes & Valances, Swags and Cascades',
     description:
       'Custom cornices are upholstered fabric on a board, always one of a kind. Built to suit, we can make them simple or fancy.',
-    imageSrc: '/images/windows/cornices.jpg',
+    imageSrc: '/images/windows/windows-01.jpg',
     imageAlt:
       'Custom cornice box and valance — upholstered fabric on a board, fabricated in the Drapery Enterprises Santa Cruz workroom',
   },

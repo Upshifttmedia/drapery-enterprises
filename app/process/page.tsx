@@ -95,7 +95,7 @@ export default function ProcessPage() {
   return (
     <>
       <HeroSection
-        imageSrc="/images/process/process-01.jpg"
+        imageSrc="/images/process/process-hero-new.jpg"
         imageAlt="Fabric samples and workroom drawings laid out during the design presentation stage at Drapery Enterprises"
         label="The Process"
         headline="A process built for work that lasts."

@@ -161,8 +161,7 @@ export default function AboutPage() {
               Wendi Strong
             </h2>
             <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed mb-5 max-w-sm">
-              With an extensive background in textiles, from the carpet industry, and also from
-              years of sewing, Wendi knows how to handle fabrics. She also attends numerous
+              With an extensive background in textiles from years of sewing, Wendi knows how to handle fabrics. She also attends numerous
               national window-covering conferences annually. Currently a member of the WCAA
               (Window Coverings Association of America), in the past she also served on the
               board of the Northern California chapter.

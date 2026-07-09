@@ -11,6 +11,10 @@ const projectTypes = [
   'Not Sure Yet',
 ]
 
+interface InquiryFormProps {
+  nameLabel?: string
+}
+
 interface FormState {
   name: string
   email: string
@@ -19,7 +23,7 @@ interface FormState {
   message: string
 }
 
-export default function InquiryForm() {
+export default function InquiryForm({ nameLabel = 'Your Name' }: InquiryFormProps) {
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState<FormState>({
     name: '',
@@ -69,7 +73,7 @@ export default function InquiryForm() {
       {/* Name */}
       <div className="mb-8">
         <label htmlFor="name" className={labelBase}>
-          Your Name
+          {nameLabel}
         </label>
         <input
           id="name"

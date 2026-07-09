@@ -28,9 +28,8 @@ const steps = [
     title: 'We visit your space.',
     duration: 'Week 1',
     description:
-      'We come to you. In your home, in your light, we measure your windows, observe your architecture, and listen to how you want the room to feel. We bring nothing to sell — only to understand.',
-    detail:
-      'Most consultations take 60 to 90 minutes. For window coverings, we measure every window to the millimeter. For bedding, we assess the room, the bed, and the light before we make any recommendations.',
+      'Schedule a check measure / consultation appointment and we will come to you to get exact measurements and listen to your vision. We bring nothing to sell — only to understand.',
+    detail: '',
   },
   {
     number: '03',
@@ -38,9 +37,8 @@ const steps = [
     title: 'We compose a proposal for your room.',
     duration: 'Week 2–3',
     description:
-      'Within one to two weeks, we return — or schedule a follow-up — with fabric samples, hardware options, and detailed workroom drawings. You see every selection in your own light before anything is ordered.',
-    detail:
-      'We present one considered proposal, not a stack of options. If adjustments are needed, we refine until it\'s right. We don\'t move to fabrication until you love it.',
+      'We will have a proposal for your project.',
+    detail: '',
   },
   {
     number: '04',
@@ -82,10 +80,6 @@ const faqs = [
   {
     q: 'Do you work on single rooms or whole-home projects?',
     a: 'Both. Some clients come to us for a single statement window. Others engage us for an entire home or a major renovation. We approach every project with the same care regardless of scope.',
-  },
-  {
-    q: 'Do you work with my interior designer?',
-    a: 'Yes — and we do it well. Our trade program is designed for designers who want a workroom that communicates clearly, delivers on time, and produces work they\'re proud to have in their client\'s home.',
   },
   {
     q: 'What is your service area?',
@@ -155,7 +149,7 @@ export default function ProcessPage() {
               <FadeUp
                 key={i}
                 delay={0.05}
-                className="grid grid-cols-1 md:grid-cols-[80px_1fr_1fr] gap-6 md:gap-12 py-10 md:py-12"
+                className="grid grid-cols-1 md:grid-cols-[80px_1fr] gap-6 md:gap-12 py-10 md:py-12"
                 style={{ borderTop: '1px solid rgba(250, 250, 248, 0.08)' }}
               >
                 <div className="flex md:flex-col gap-4 items-start">
@@ -180,11 +174,6 @@ export default function ProcessPage() {
                   </h3>
                   <p className="font-jost font-light text-muted text-sm leading-relaxed">
                     {step.description}
-                  </p>
-                </div>
-                <div className="md:pl-4" style={{ borderLeft: '1px solid rgba(250,250,248,0.07)' }}>
-                  <p className="font-jost font-light text-muted/70 text-sm leading-relaxed italic">
-                    {step.detail}
                   </p>
                 </div>
               </FadeUp>

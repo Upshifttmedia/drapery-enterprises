@@ -14,34 +14,23 @@ export const metadata: Metadata = {
 
 const pieces = [
   {
-    title: 'Duvet Covers',
+    title: 'Bedspreads, Duvet Covers, Coverlets, Bed Skirts & Scaldinos',
     description:
-      'Custom-cut to your exact duvet insert, with hand-finished edges and closures of your choosing. Available in linen, cotton percale, sateen, and silk.',
+      'Custom-cut to your exact duvet insert, with hand-finished edges and closures of your choosing.',
   },
   {
-    title: 'Coverlets & Quilts',
+    title: 'Accent Pillows & Bolsters',
     description:
-      'The defining layer of any well-composed bed. Hand-quilted or machine-quilted coverlets in fabrics and patterns chosen for your room — never from a catalogue.',
+      'selected to complete the composition — to punctuate it or anchor it, depending on the room.',
   },
   {
-    title: 'Fitted & Flat Sheets',
-    description:
-      'Tailored to your exact mattress depth with mitered corners that stay in place. We use the same European linen and percale mills as the finest hotels.',
+    title: 'Pillow Shams',
+    description: '',
   },
   {
-    title: 'Shams & Pillowcases',
+    title: 'Upholstered Headboards',
     description:
-      'Knife-edge, flange, or Oxford finish — your choice. Fabricated in the same cloth as your duvet cover for a composed ensemble, or in a deliberate contrast.',
-  },
-  {
-    title: 'Throw Pillows & Bolsters',
-    description:
-      'Down-filled or feather-wrapped, in fabric selected to complete the composition — to punctuate it or anchor it, depending on the room.',
-  },
-  {
-    title: 'Bed Skirts & Valances',
-    description:
-      'Tailored to your bed frame\'s exact drop height. A finishing detail most overlook — and one that defines the whole arrangement.',
+      'Upholstered headboards built to your exact specifications — any shape, any fabric, any finish. Every headboard is constructed and upholstered in our Santa Cruz workroom.',
   },
 ]
 
@@ -76,7 +65,7 @@ export default function BeddingPage() {
         imageAlt="Bespoke linen bedding ensemble with custom shams and a hand-quilted coverlet in a Santa Cruz coastal bedroom"
         label="Bedding Couture"
         headline="The most private room in your home deserves the most considered design."
-        subheadline="Custom duvets, coverlets, shams, and bedding ensembles — composed as a single, lasting statement."
+        subheadline="In the home — Bedspreads, bed skirts, duvets, coverlets, shams, and bedding ensembles — composed as a single, lasting statement."
         ctaText="Begin a Private Consultation"
         ctaHref="/contact"
       />
@@ -103,8 +92,7 @@ export default function BeddingPage() {
           </p>
           <p className="font-jost font-light text-muted text-base leading-relaxed">
             Every piece is fabricated to your bed&rsquo;s exact dimensions. Hems are hand-finished.
-            Fabrics are sourced from European textile houses we have used for years. Nothing ships
-            until it&rsquo;s perfect.
+            Fabrics are sourced from European textile houses we have used for years.
           </p>
         </FadeUp>
       </section>

@@ -24,11 +24,6 @@ const benefits = [
       'Full fabric sample library available to trade accounts. Samples shipped same day for active projects.',
   },
   {
-    title: 'Workroom Drawings',
-    description:
-      'We provide detailed, dimensioned workroom drawings for every project — compatible with AutoCAD and PDF. No surprises for your client.',
-  },
-  {
     title: 'White-Label Installation',
     description:
       'We install under your brand. Your client sees your name. The quality reflects well on both of us.',
@@ -143,10 +138,9 @@ export default function TradePage() {
           </FadeUp>
           <FadeUp delay={0.15} className="flex flex-col gap-0">
             {[
-              'Interior designers & decorators',
+              'Interior designers',
               'Residential architects',
               'Luxury spec builders & developers',
-              'Staging & design firms',
               'Property management companies',
               'Contract & hospitality design',
             ].map((item, i) => (
@@ -228,7 +222,7 @@ export default function TradePage() {
               inquiries within 48 hours.
             </p>
           </FadeUp>
-          <InquiryForm />
+          <InquiryForm nameLabel="Business Name" />
         </div>
       </section>
     </>

@@ -16,7 +16,7 @@ const treatments = [
   {
     title: 'Custom Drapery',
     description:
-      'Floor-to-ceiling panels in pinch-pleat, ripple-fold, or goblet styles — in your choice of linen, silk, wool, velvet, or performance fabric. Every panel is cut, sewn, and finished in our Santa Cruz workroom.',
+      'Floor-to-ceiling panels from French Pleat to Ripple Fold, each panel is tailored to your exact vision and specifications. Cut, sewn, and finished in our Santa Cruz workroom.',
     imageSrc: '/images/windows/windows-01.jpg',
     imageAlt:
       'Custom pinch-pleat linen drapery panels, floor-to-ceiling, in a Carmel coastal residence',
@@ -24,18 +24,42 @@ const treatments = [
   {
     title: 'Roman Shades',
     description:
-      'Flat, relaxed, or hobbled — roman shades offer architectural presence at the window. We fabricate in any fabric, with blackout or privacy lining, cordless lift, or motorized operation.',
-    imageSrc: '/images/windows/windows-03.jpg',
+      'Flat, relaxed, or hobbled — roman shades offer architectural presence at the window. We fabricate in any fabric, with blackout or privacy lining, cord lift, cordless lift, or automated operation.',
+    imageSrc: '/images/windows/roman-shades-new.jpg',
     imageAlt:
       'Tailored flat roman shade in a heritage stripe linen, mounted inside the window casement',
   },
   {
     title: 'Sheers & Casements',
     description:
-      'The most underestimated layer in a room. A beautifully chosen sheer softens light, adds depth, and frames a view without hiding it. We source from European mills known for their gossamer weaves.',
+      'The most underestimated layer in a room. A beautifully chosen sheer softens light, adds depth, and frames a view without hiding it.',
     imageSrc: '/images/windows/windows-02.jpg',
     imageAlt:
       'Belgian linen sheer panels filtering afternoon light in a Santa Cruz living room',
+  },
+  {
+    title: 'Cornice Boxes & Valances, Swags and Cascades',
+    description:
+      'Custom cornices are upholstered fabric on a board, always one of a kind. Built to suit, we can make them simple or fancy.',
+    imageSrc: '/images/windows/cornices.jpg',
+    imageAlt:
+      'Custom cornice box and valance — upholstered fabric on a board, fabricated in the Drapery Enterprises Santa Cruz workroom',
+  },
+  {
+    title: 'Bedding, Pillows & Cushions',
+    description:
+      'Custom bedding, decorative pillows, and cushions — interior and exterior. Every piece fabricated to your specifications in our Santa Cruz workroom.',
+    imageSrc: '/images/bedding/bedding-01.jpg',
+    imageAlt:
+      'Custom pillows and cushions fabricated in the Drapery Enterprises Santa Cruz workroom',
+  },
+  {
+    title: 'Light Upholstery',
+    description:
+      'Chair pads and headboards upholstered to your exact specifications — any fabric, any finish.',
+    imageSrc: '/images/windows/windows-03.jpg',
+    imageAlt:
+      'Light upholstery — custom chair pad and headboard fabricated in the Drapery Enterprises workroom',
   },
 ]
 
@@ -74,29 +98,6 @@ export default function WindowsPage() {
         ctaText="Begin a Private Consultation"
         ctaHref="/contact"
       />
-
-      {/* Approach */}
-      <section className="py-24 md:py-36 px-6 md:px-10 bg-linen" aria-labelledby="windows-approach">
-        <FadeUp className="max-w-3xl mx-auto">
-          <SectionLabel>Our Approach</SectionLabel>
-          <h2
-            id="windows-approach"
-            className="font-cormorant font-light text-charcoal text-4xl md:text-5xl leading-tight mb-8"
-          >
-            We consider the window before the fabric.
-          </h2>
-          <p className="font-jost font-light text-muted text-base leading-relaxed mb-5">
-            Most window coverings are chosen for style. Ours are designed for the room. We begin
-            with light — how it enters, how it moves through the day, how it changes with the
-            season. Then proportion. Then architecture. Then fabric.
-          </p>
-          <p className="font-jost font-light text-muted text-base leading-relaxed">
-            Every treatment we produce is custom to your window&rsquo;s exact dimensions — your
-            ceiling height, your casing depth, your floor condition. Nothing is off-the-shelf.
-            Nothing is approximate.
-          </p>
-        </FadeUp>
-      </section>
 
       {/* Treatment types */}
       <section
@@ -165,12 +166,12 @@ export default function WindowsPage() {
                 The rod is part of the design.
               </h2>
               <p className="font-jost font-light text-muted text-base leading-relaxed mb-6 max-w-sm">
-                We specify and source custom hardware for every project — forged iron, brushed
+                We specify and source custom hardware as needed — forged iron, brushed
                 brass, unlacquered bronze, or hand-turned wood. The hardware should feel like it
                 was always there.
               </p>
               <p className="font-jost font-light text-muted text-base leading-relaxed max-w-sm">
-                We also partner with leading motorization brands for clients who want smart-home
+                We also partner with leading automation brands for clients who want smart-home
                 integration without sacrificing the beauty of the treatment.
               </p>
             </div>
@@ -180,7 +181,7 @@ export default function WindowsPage() {
                 'Unlacquered brass & bronze',
                 'Hand-turned hardwood',
                 'Custom finials & brackets',
-                'Motorized lift systems',
+                'Automated lift systems',
                 'Smart home integration',
               ].map((item, i) => (
                 <div

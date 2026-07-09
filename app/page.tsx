@@ -83,8 +83,8 @@ export default function HomePage() {
         objectPosition="center 30%"
         headline="Every room has a moment waiting to be made."
         subheadline="Bespoke window coverings and bedding couture — from inspiration to installation."
-        ctaText="Begin a Private Consultation"
-        ctaHref="/contact"
+        ctaText="To the Trade"
+        ctaHref="/trade"
       />
 
       {/* ─── 2. Positioning statement ─────────────────────────── */}
@@ -126,6 +126,8 @@ export default function HomePage() {
             'Lutron Automation',
             'Hunter Douglas Blinds & Shades',
             'Conrad',
+            'Bedding, pillows & cushions',
+            'Light upholstery (chair pads & headboards)',
           ]}
           ctaText="Explore Window Coverings"
           ctaHref="/windows"
@@ -138,7 +140,7 @@ export default function HomePage() {
           description="Bespoke duvets, coverlets, shams, and pillow arrangements — composed as a complete textile statement. Every piece tailored to your bed's exact proportions and your sense of beauty."
           details={[
             'Custom duvet covers & inserts',
-            'Bedspreads',
+            'Bespoke Bedspreads',
             'Pillow shams',
             'Custom throw pillows & cushions — Interior & Exterior',
           ]}
@@ -148,6 +150,27 @@ export default function HomePage() {
           imageAlt="Bespoke Belgian linen bedding ensemble in a Monterey Bay coastal bedroom"
           reversed
         />
+      </section>
+
+      {/* ─── Handcrafted Beauty ───────────────────────────────── */}
+      <section
+        className="py-24 md:py-36 px-6 md:px-10 bg-stone"
+        aria-labelledby="handcrafted-heading"
+      >
+        <FadeUp className="max-w-3xl mx-auto text-center">
+          <SectionLabel>Idea Showroom</SectionLabel>
+          <h2
+            id="handcrafted-heading"
+            className="font-cormorant font-light text-charcoal text-4xl md:text-5xl leading-tight mb-8"
+          >
+            Handcrafted Beauty
+          </h2>
+          <p className="font-jost font-light text-muted text-base leading-relaxed max-w-xl mx-auto">
+            Our &ldquo;Idea Showroom&rdquo; is available by appointment to offer inspiration.
+            The Showroom contains samples of most anything you will need to fine tune your
+            custom project. We work with you to design, measure, and prep your estimate.
+          </p>
+        </FadeUp>
       </section>
 
       {/* ─── 4. Portfolio preview ─────────────────────────────── */}

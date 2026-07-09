@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 
 const details = [
   {
-    label: 'Studio Location',
+    label: 'Location',
     value: 'Santa Cruz, California',
   },
   {
     label: 'Service Area',
-    value: 'Santa Cruz · Monterey Bay · Silicon Valley · Bay Area',
+    value: 'Santa Cruz · Monterey Bay · Silicon Valley · Bay Area · Sonoma · Santa Fe · Palm Springs',
   },
   {
     label: 'Email',
@@ -30,7 +30,7 @@ const details = [
   },
   {
     label: 'Consultations',
-    value: 'By appointment only — in your home or at our studio.',
+    value: 'By appointment only — in your home.',
   },
 ]
 
@@ -77,7 +77,7 @@ export default function ContactPage() {
               className="sticky top-32 flex flex-col gap-0"
             >
               <p className="font-jost font-medium text-[0.625rem] tracking-[0.2em] uppercase text-brass mb-8">
-                Studio Details
+                Details
               </p>
 
               {details.map(({ label, value, href }, i) => (
@@ -113,7 +113,7 @@ export default function ContactPage() {
                 </p>
                 <p className="font-jost font-light text-sm text-charcoal leading-relaxed">
                   We respond to all inquiries within 48 hours, typically sooner.
-                  Consultations are scheduled Monday through Saturday.
+                  Consultations are scheduled Monday through Friday.
                 </p>
               </div>
 
@@ -156,10 +156,6 @@ export default function ContactPage() {
               {
                 heading: 'No rush.',
                 body: 'Custom work takes time. Our process is designed to feel considered, not urgent.',
-              },
-              {
-                heading: 'In your home.',
-                body: 'We come to you. Every consultation happens in your space, in your light.',
               },
             ].map(({ heading, body }, i) => (
               <div key={i} className="flex-1">

@@ -75,9 +75,40 @@ export default function Footer() {
               href="/contact"
               className="inline-block font-jost font-medium text-[0.625rem] tracking-[0.2em] uppercase px-6 py-3 border border-brass text-brass hover:bg-brass hover:text-off-white transition-all duration-300"
             >
-              Inquire Now
+              Tell Us About Your Project
             </Link>
           </div>
+        </div>
+
+        {/* Certification logos */}
+        <div
+          className="py-8 mb-2 flex flex-wrap items-center gap-6"
+          style={{ borderTop: '1px solid rgba(250, 250, 248, 0.1)' }}
+        >
+          <span className="font-jost font-light text-[0.5625rem] tracking-[0.18em] uppercase text-muted mr-2">
+            Certifications
+          </span>
+          <Image
+            src="/images/logos/epa-lead-safe.png"
+            alt="EPA Lead-Safe Certified Firm"
+            height={36}
+            width={80}
+            style={{ height: 36, width: 'auto', opacity: 0.6 }}
+          />
+          <Image
+            src="/images/logos/wcaa.png"
+            alt="WCAA — Window Coverings Association of America"
+            height={36}
+            width={80}
+            style={{ height: 36, width: 'auto', opacity: 0.6 }}
+          />
+          <Image
+            src="/images/logos/iwce.png"
+            alt="IWCE — International Window Coverings Expo"
+            height={36}
+            width={80}
+            style={{ height: 36, width: 'auto', opacity: 0.6 }}
+          />
         </div>
 
         {/* Bottom bar */}

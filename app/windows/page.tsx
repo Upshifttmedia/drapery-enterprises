@@ -49,7 +49,7 @@ const treatments = [
     title: 'Bedding, Pillows & Cushions',
     description:
       'Custom bedding, decorative pillows, and cushions — interior and exterior. Every piece fabricated to your specifications in our Santa Cruz workroom.',
-    imageSrc: '/images/bedding/bedding-01.jpg',
+    imageSrc: '/images/bedding/bedding-pillows-cushions.jpg',
     imageAlt:
       'Custom pillows and cushions fabricated in the Drapery Enterprises Santa Cruz workroom',
   },

@@ -257,16 +257,6 @@ export default function BeddingPage() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-charcoal/35" />
-        <div className="absolute inset-0 flex items-end p-8 md:p-16">
-          <FadeUp>
-            <p className="font-cormorant italic text-off-white text-xl md:text-2xl lg:text-3xl max-w-xl opacity-90 leading-relaxed">
-              Sourced from European mills.
-              <br />
-              Made for your bed.
-            </p>
-          </FadeUp>
-        </div>
       </section>
 
       {/* Process note */}

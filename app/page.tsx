@@ -37,8 +37,8 @@ const portfolioPreview = [
     label: 'Window Coverings',
   },
   {
-    src: '/images/portfolio/portfolio-05.jpg',
-    alt: 'Layered custom bedding with hand-quilted coverlet and coordinating shams',
+    src: '/images/bedding/bedding-hotel.jpeg',
+    alt: 'Custom bedding — Drapery Enterprises',
     label: 'Bedding Couture',
   },
   {

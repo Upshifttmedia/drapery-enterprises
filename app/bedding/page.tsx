@@ -251,8 +251,8 @@ export default function BeddingPage() {
       {/* bedding-05 — full-width banner with caption */}
       <section className="relative h-[55vh] md:h-[70vh] overflow-hidden bg-stone">
         <Image
-          src="/images/bedding/bedding-05.jpg"
-          alt="European textile mill fabric rolls — the source materials for Drapery Enterprises custom bedding couture"
+          src="/images/bedding/bedding-pillows-cushions.jpg"
+          alt="Custom pillows and cushions — decorative accent pieces fabricated in the Drapery Enterprises Santa Cruz workroom"
           fill
           className="object-cover object-center"
           sizes="100vw"

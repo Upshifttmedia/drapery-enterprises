@@ -46,14 +46,6 @@ const treatments = [
       'Custom cornice box and valance — upholstered fabric on a board, fabricated in the Drapery Enterprises Santa Cruz workroom',
   },
   {
-    title: 'Bedding, Pillows & Cushions',
-    description:
-      'Custom bedding, decorative pillows, and cushions — interior and exterior. Every piece fabricated to your specifications in our Santa Cruz workroom.',
-    imageSrc: '/images/bedding/bedding-pillows-cushions.jpg',
-    imageAlt:
-      'Custom pillows and cushions fabricated in the Drapery Enterprises Santa Cruz workroom',
-  },
-  {
     title: 'Light Upholstery',
     description:
       'Chair pads and headboards upholstered to your exact specifications — any fabric, any finish.',

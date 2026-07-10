@@ -146,7 +146,7 @@ export default function HomePage() {
           ]}
           ctaText="Explore Bedding Couture"
           ctaHref="/bedding"
-          imageSrc="/images/bedding/bedding-hotel.jpeg"
+          imageSrc="/images/bedding/bedding-01.jpg"
           imageAlt="Bespoke Belgian linen bedding ensemble in a Monterey Bay coastal bedroom"
           reversed
         />

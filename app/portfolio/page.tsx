@@ -12,13 +12,6 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    src: '/images/portfolio/portfolio-01.jpg',
-    alt: 'Custom floor-to-ceiling linen drapery panels in a Santa Cruz coastal residence — natural linen, unlacquered brass hardware',
-    category: 'Window Coverings',
-    location: 'Santa Cruz, CA',
-    detail: 'Linen drapery · Brass hardware · Motorized',
-  },
-  {
     src: '/images/portfolio/portfolio-02.jpg',
     alt: 'Bespoke Belgian linen bedding ensemble in a Monterey Bay estate master bedroom',
     category: 'Bedding Couture',

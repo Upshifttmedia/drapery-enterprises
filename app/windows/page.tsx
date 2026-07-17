@@ -33,7 +33,7 @@ const treatments = [
     title: 'Sheers & Casements',
     description:
       'The most underestimated layer in a room. A beautifully chosen sheer softens light, adds depth, and frames a view without hiding it.',
-    imageSrc: '/images/windows/sheers-new.jpg',
+    imageSrc: '/images/portfolio/portfolio-01.jpg',
     imageAlt:
       'Belgian linen sheer panels filtering afternoon light in a Santa Cruz living room',
   },

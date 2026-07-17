@@ -165,6 +165,14 @@ export default function InquiryForm({ nameLabel = 'Your Name' }: InquiryFormProp
         </div>
       </fieldset>
 
+      {/* Consultations */}
+      <div className="mb-10">
+        <p className={labelBase}>Consultations</p>
+        <p className="font-jost font-light text-sm text-charcoal leading-relaxed mt-1">
+          At job site, in home, or at our facility.
+        </p>
+      </div>
+
       {/* Message */}
       <div className="mb-12">
         <label htmlFor="message" className={labelBase}>

@@ -16,7 +16,7 @@ const details = [
   },
   {
     label: 'Service Area',
-    value: 'Santa Cruz · Monterey Bay · Silicon Valley · Bay Area · Sonoma · Santa Fe · Palm Springs',
+    value: 'Santa Cruz · Monterey Bay · Silicon Valley · Bay Area',
   },
   {
     label: 'Email',

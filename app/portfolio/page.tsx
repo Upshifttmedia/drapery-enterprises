@@ -180,7 +180,7 @@ export default function PortfolioPage() {
             Every project in this portfolio began with a single inquiry. Yours can too.
           </p>
           <Button href="/contact" variant="light">
-            Begin a Private Consultation
+            Begin a Consultation
           </Button>
         </FadeUp>
       </section>

@@ -100,7 +100,7 @@ export default function ProcessPage() {
         label="The Process"
         headline="A process built for work that lasts."
         subheadline="Six steps, no shortcuts. From first conversation to finished installation."
-        ctaText="Begin a Private Consultation"
+        ctaText="Begin a Consultation"
         ctaHref="/contact"
         minHeight="min-h-[70vh]"
       />
@@ -243,7 +243,7 @@ export default function ProcessPage() {
             We&rsquo;ll be in touch within 48 hours.
           </p>
           <Button href="/contact" variant="primary">
-            Begin a Private Consultation
+            Begin a Consultation
           </Button>
         </FadeUp>
       </section>

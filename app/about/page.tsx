@@ -248,7 +248,7 @@ export default function AboutPage() {
             about your space.
           </p>
           <Button href="/contact" variant="primary">
-            Begin a Private Consultation
+            Begin a Consultation
           </Button>
         </FadeUp>
       </section>

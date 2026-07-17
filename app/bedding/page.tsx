@@ -66,7 +66,7 @@ export default function BeddingPage() {
         label="Bedding Couture"
         headline="The most private room in your home deserves the most considered design."
         subheadline="In the home — Bedspreads, bed skirts, duvets, coverlets, shams, and bedding ensembles — composed as a single, lasting statement."
-        ctaText="Begin a Private Consultation"
+        ctaText="Begin a Consultation"
         ctaHref="/contact"
       />
 
@@ -342,7 +342,7 @@ export default function BeddingPage() {
             no rush.
           </p>
           <Button href="/contact" variant="light">
-            Begin a Private Consultation
+            Begin a Consultation
           </Button>
         </FadeUp>
       </section>

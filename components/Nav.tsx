@@ -158,7 +158,7 @@ export default function Nav() {
                   href="/contact"
                   className="font-jost font-medium text-sm tracking-[0.2em] uppercase text-brass flex items-center gap-4"
                 >
-                  Begin a Private Consultation
+                  Begin a Consultation
                   <span className="block w-8 h-px bg-brass" />
                 </Link>
               </motion.div>

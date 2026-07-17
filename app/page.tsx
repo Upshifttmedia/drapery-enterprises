@@ -421,7 +421,7 @@ export default function HomePage() {
             <em className="italic text-brass">made just for it.</em>
           </p>
           <Button href="/contact" variant="light">
-            Begin a Private Consultation
+            Begin a Consultation
           </Button>
           <p className="font-jost font-light text-muted text-xs mt-10 tracking-widest uppercase">
             Santa Cruz &nbsp;·&nbsp; Monterey Bay &nbsp;·&nbsp; Silicon Valley

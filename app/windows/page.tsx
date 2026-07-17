@@ -87,7 +87,7 @@ export default function WindowsPage() {
         label="Window Coverings"
         headline="A window is an architectural moment. Treat it as one."
         subheadline="Custom drapery, shades, and sheers — composed for proportion, light, and your singular view."
-        ctaText="Begin a Private Consultation"
+        ctaText="Begin a Consultation"
         ctaHref="/contact"
       />
 
@@ -253,7 +253,7 @@ export default function WindowsPage() {
             your light, and begin designing.
           </p>
           <Button href="/contact" variant="primary">
-            Begin a Private Consultation
+            Begin a Consultation
           </Button>
           <p className="font-jost font-light text-xs text-muted mt-8 tracking-wider">
             Serving Monterey Bay &nbsp;·&nbsp; Santa Cruz &nbsp;·&nbsp; Bay Area

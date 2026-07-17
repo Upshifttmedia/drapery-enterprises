@@ -12,34 +12,6 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    src: '/images/portfolio/portfolio-02.jpg',
-    alt: 'Bespoke Belgian linen bedding ensemble in a Monterey Bay estate master bedroom',
-    category: 'Bedding Couture',
-    location: 'Pebble Beach, CA',
-    detail: 'Belgian linen · Hand-quilted coverlet',
-  },
-  {
-    src: '/images/portfolio/portfolio-03.jpg',
-    alt: 'Roman shades in a heritage stripe linen, Carmel Valley home office with built-in shelving',
-    category: 'Window Coverings',
-    location: 'Carmel Valley, CA',
-    detail: 'Roman shades · Stripe linen · Cordless',
-  },
-  {
-    src: '/images/portfolio/portfolio-04.jpg',
-    alt: 'Custom silk drapery with hand-sewn leading edges in a Palo Alto formal living room',
-    category: 'Window Coverings',
-    location: 'Palo Alto, CA',
-    detail: 'Silk drapery · Goblet pleat · Iron hardware',
-  },
-  {
-    src: '/images/portfolio/portfolio-05.jpg',
-    alt: 'Layered bedding with custom duvet, hand-quilted coverlet, and European square shams in Los Altos Hills bedroom',
-    category: 'Bedding Couture',
-    location: 'Los Altos Hills, CA',
-    detail: 'Sateen duvet · Quilted coverlet · Custom shams',
-  },
-  {
     src: '/images/portfolio/portfolio-06.jpg',
     alt: 'Sheer linen panels with solar shade undertreatment in a modern Santa Cruz kitchen',
     category: 'Window Coverings',
@@ -112,27 +84,15 @@ export default function PortfolioPage() {
               <FadeUp
                 key={i}
                 delay={i * 0.04}
-                className="relative h-[260px] md:h-[340px] lg:h-[400px] overflow-hidden group bg-stone"
+                className="relative h-[260px] md:h-[340px] lg:h-[400px] overflow-hidden bg-stone"
               >
                 <Image
                   src={project.src}
                   alt={project.alt}
                   fill
-                  className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.03]"
+                  className="object-cover object-center transition-transform duration-700"
                   sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 33vw"
                 />
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400 flex flex-col justify-end p-5 md:p-7">
-                  <span className="block font-jost font-medium text-[0.625rem] tracking-[0.2em] uppercase text-brass mb-1">
-                    {project.category}
-                  </span>
-                  <p className="font-cormorant font-light text-off-white text-xl leading-tight mb-1">
-                    {project.location}
-                  </p>
-                  <p className="font-jost font-light text-off-white/60 text-xs tracking-wider">
-                    {project.detail}
-                  </p>
-                </div>
               </FadeUp>
             ))}
           </div>

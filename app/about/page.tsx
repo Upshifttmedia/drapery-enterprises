@@ -43,54 +43,36 @@ export default function AboutPage() {
       />
 
       {/* Maker story */}
-      <section className="bg-linen" aria-labelledby="maker-heading">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[600px]">
-          <FadeUp className="relative min-h-[420px] lg:min-h-full overflow-hidden bg-stone">
-            <Image
-              src="/images/about/about-02.jpg"
-              alt="Detail of the Drapery Enterprises workroom — fabric rolls, cutting table, and hand tools in the Santa Cruz atelier"
-              fill
-              className="object-cover object-center"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </FadeUp>
-          <FadeUp
-            delay={0.2}
-            className="flex flex-col justify-center px-8 md:px-14 lg:px-20 py-20 md:py-28"
+      <section className="py-24 md:py-36 px-6 md:px-10 bg-linen" aria-labelledby="maker-heading">
+        <FadeUp className="max-w-3xl mx-auto">
+          <SectionLabel>The Maker</SectionLabel>
+          <h2
+            id="maker-heading"
+            className="font-cormorant font-light text-charcoal text-4xl md:text-5xl leading-tight mb-6"
           >
-            <SectionLabel>The Maker</SectionLabel>
-            <h2
-              id="maker-heading"
-              className="font-cormorant font-light text-charcoal text-4xl md:text-5xl leading-tight mb-6"
-            >
-              Family Owned &amp; Operated
-            </h2>
-            <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed max-w-sm">
-              Drapery Enterprises, Inc. first opened its doors in 1948 as a wholesale workroom.
-              Owned and operated by Wendi Strong, who works to bring fresh new ideas and spirit
-              to the business while maintaining the standards of superior workmanship and design
-              assistance that our customers have come to count on.
-            </p>
-          </FadeUp>
-        </div>
+            Family Owned &amp; Operated
+          </h2>
+          <p className="font-jost font-light text-muted text-sm md:text-base leading-relaxed max-w-xl">
+            Drapery Enterprises, Inc. first opened its doors in 1948 as a wholesale workroom.
+            Owned and operated by Wendi Strong, who works to bring fresh new ideas and spirit
+            to the business while maintaining the standards of superior workmanship and design
+            assistance that our customers have come to count on.
+          </p>
+        </FadeUp>
       </section>
 
-      {/* Process image — full-width editorial break */}
-      <section className="relative h-[55vh] md:h-[70vh] overflow-hidden bg-stone" aria-hidden="true">
-        <Image
-          src="/images/process/process-01.jpg"
-          alt="Measuring and hand-marking fabric in the Drapery Enterprises Santa Cruz workroom — precision at every stage"
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-charcoal/25" />
-        <div className="absolute inset-0 flex items-end p-8 md:p-16">
-          <FadeUp>
-            <p className="font-cormorant italic text-off-white text-xl md:text-2xl max-w-lg opacity-90 leading-relaxed">
-              &ldquo;Every measurement is a commitment. Every cut, a decision that lasts.&rdquo;
-            </p>
-          </FadeUp>
+      {/* Testimonial — Ron Martino */}
+      <section
+        className="py-24 md:py-32 px-6 md:px-10 bg-linen"
+        aria-label="Client testimonial"
+        style={{ borderTop: '1px solid var(--rule)' }}
+      >
+        <div className="max-w-8xl mx-auto">
+          <TestimonialBlock
+            quote="Our relationship with Drapery Enterprises goes back over 70 years. My father worked with the founders in the early 50's, and I continued to work with Drapery Enterprises when Wendi and her parents took over the business in 2003. For over 80 years, Martino Interiors' business philosophy has been to be loyal to our suppliers and workrooms who we trust and who provide quality products. Wendi and her staff have continually produced beautiful window coverings and provided excellent customer service. I feel very fortunate that over 7 decades we've been able to continue our relationship with Wendi and Drapery Enterprises."
+            client="Ron Martino"
+            city="Martino Interiors, Los Gatos"
+          />
         </div>
       </section>
 
@@ -216,20 +198,6 @@ export default function AboutPage() {
               Every piece made to last.&rdquo;
             </p>
           </FadeUp>
-        </div>
-      </section>
-
-      {/* Testimonial */}
-      <section
-        className="py-24 md:py-32 px-6 md:px-10 bg-stone"
-        aria-label="Client testimonial"
-      >
-        <div className="max-w-8xl mx-auto">
-          <TestimonialBlock
-            quote="Our relationship with Drapery Enterprises goes back over 70 years. My father worked with the founders in the early 50's, and I continued to work with Drapery Enterprises when Wendi and her parents took over the business in 2003. For over 80 years, Martino Interiors' business philosophy has been to be loyal to our suppliers and workrooms who we trust and who provide quality products. Wendi and her staff have continually produced beautiful window coverings and provided excellent customer service. I feel very fortunate that over 7 decades we've been able to continue our relationship with Wendi and Drapery Enterprises."
-            client="Ron Martino"
-            city="Martino Interiors, Los Gatos"
-          />
         </div>
       </section>
 

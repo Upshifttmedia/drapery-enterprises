@@ -37,9 +37,8 @@ export default function AboutPage() {
       <HeroSection
         imageSrc="/images/about/about-01.jpg"
         imageAlt="The hands of our maker measuring and cutting fabric in the Drapery Enterprises atelier in Santa Cruz, California"
-        label="The Studio"
         headline="A Window Into Drapery Enterprises"
-        subheadline="A Santa Cruz atelier for custom window coverings and bedding couture."
+        subheadline="A Santa Cruz atelier for custom window coverings and bedding couture. Since 1948."
         minHeight="min-h-[70vh]"
       />
 

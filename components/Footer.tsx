@@ -90,7 +90,7 @@ export default function Footer() {
             alt="Lutron"
             height={32}
             width={120}
-            style={{ height: 32, width: 'auto', opacity: 0.5, filter: 'grayscale(1)' }}
+            style={{ height: 32, width: 'auto', opacity: 0.5, filter: 'brightness(0) invert(1)' }}
           />
           <Image
             src="/images/logos/Somfy_logo.svg.webp"

@@ -86,7 +86,7 @@ export default function Footer() {
           style={{ borderTop: '1px solid rgba(250, 250, 248, 0.1)' }}
         >
           <Image
-            src="/images/logos/Lutron Logo_White.jpg"
+            src="/images/logos/Lutron Logo_Black.png"
             alt="Lutron"
             height={32}
             width={120}

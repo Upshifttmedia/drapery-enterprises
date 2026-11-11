@@ -86,11 +86,11 @@ export default function Footer() {
           style={{ borderTop: '1px solid rgba(250, 250, 248, 0.1)' }}
         >
           <Image
-            src="/images/logos/Lutron Logo_Black.png"
+            src="/images/logos/Lutron Logo_White.jpg"
             alt="Lutron"
             height={32}
             width={120}
-            style={{ height: 32, width: 'auto', opacity: 0.5, filter: 'grayscale(1) invert(1)' }}
+            style={{ height: 32, width: 'auto', opacity: 0.5, filter: 'grayscale(1)' }}
           />
           <Image
             src="/images/logos/Somfy_logo.svg.webp"

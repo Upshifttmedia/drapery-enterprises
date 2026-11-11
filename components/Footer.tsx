@@ -82,36 +82,36 @@ export default function Footer() {
 
         {/* Partner logos */}
         <div
-          className="py-8 mb-2 flex flex-wrap items-center justify-center gap-8"
+          className="py-8 mb-2 flex flex-wrap items-center justify-center gap-10"
           style={{ borderTop: '1px solid rgba(250, 250, 248, 0.1)' }}
         >
           <Image
             src="/images/logos/Lutron Logo_Black.png"
             alt="Lutron"
-            height={32}
+            height={28}
             width={120}
-            style={{ height: 32, width: 'auto', opacity: 0.5, filter: 'brightness(0) invert(1)' }}
+            style={{ height: 28, width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1) opacity(0.6)' }}
           />
           <Image
             src="/images/logos/Somfy_logo.svg.webp"
             alt="Somfy"
-            height={32}
+            height={28}
             width={120}
-            style={{ height: 32, width: 'auto', opacity: 0.5, filter: 'grayscale(1) invert(1)' }}
+            style={{ height: 28, width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1) opacity(0.6)' }}
           />
           <Image
             src="/images/logos/Conrad-Handwoven_grey.png"
             alt="Conrad"
-            height={32}
+            height={28}
             width={120}
-            style={{ height: 32, width: 'auto', opacity: 0.5, filter: 'grayscale(1) invert(1)' }}
+            style={{ height: 28, width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1) opacity(0.6)' }}
           />
           <Image
             src="/images/logos/Hunter_Douglas_Logo.svg.webp"
             alt="Hunter Douglas"
-            height={32}
+            height={28}
             width={120}
-            style={{ height: 32, width: 'auto', opacity: 0.5, filter: 'grayscale(1) invert(1)' }}
+            style={{ height: 28, width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1) opacity(0.6)' }}
           />
         </div>
 

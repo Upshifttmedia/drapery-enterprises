@@ -60,9 +60,9 @@ export default function Nav() {
             <Image
               src="/images/DE_logo.png"
               alt="Drapery Enterprises"
-              height={48}
-              width={200}
-              style={{ height: 48, width: 'auto' }}
+              height={72}
+              width={300}
+              style={{ height: 72, width: 'auto' }}
               priority
             />
           </Link>

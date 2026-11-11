@@ -34,29 +34,6 @@ const pieces = [
   },
 ]
 
-const fabrics = [
-  {
-    name: 'Belgian Linen',
-    description:
-      'Washed or crisp — Belgian linen improves with every wash and every night of sleep. The gold standard for clients who value honest, enduring materials.',
-  },
-  {
-    name: 'Cotton Percale',
-    description:
-      '400-thread-count and above, from mills that measure quality by hand-feel, not marketing. Crisp, cool, and as elegant ten years from now as on day one.',
-  },
-  {
-    name: 'Sateen',
-    description:
-      'Lustrous cotton sateen for rooms that call for a softer, more luminous surface. It catches light beautifully and drapes with quiet richness.',
-  },
-  {
-    name: 'Silk & Silk-Blend',
-    description:
-      'For clients who want bedding that is also a material statement. We source cultivated silk from European specialty mills for panels and accent pieces.',
-  },
-]
-
 export default function BeddingPage() {
   return (
     <>
@@ -124,71 +101,12 @@ export default function BeddingPage() {
         </div>
       </section>
 
-      {/* Atmosphere image */}
-      <section className="relative h-[55vh] md:h-[75vh] overflow-hidden bg-stone">
-        <Image
-          src="/images/bedding/bedding-02.jpg"
-          alt="Detail of hand-finished edge on a custom Belgian linen duvet cover, fabricated in the Drapery Enterprises atelier"
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-charcoal/30" />
-        <div className="absolute inset-0 flex items-end p-8 md:p-16">
-          <FadeUp>
-            <p className="font-cormorant italic text-off-white text-xl md:text-2xl max-w-lg opacity-90 leading-relaxed">
-              &ldquo;The difference between a good bed and an exceptional one is in details
-              most people never name — but always feel.&rdquo;
-            </p>
-          </FadeUp>
-        </div>
-      </section>
-
-      {/* Fabrics */}
-      <section
-        className="py-24 md:py-32 px-6 md:px-10 bg-linen"
-        aria-labelledby="bedding-fabrics-heading"
-      >
-        <div className="max-w-4xl mx-auto">
-          <FadeUp>
-            <SectionLabel>Fabrics</SectionLabel>
-            <h2
-              id="bedding-fabrics-heading"
-              className="font-cormorant font-light text-charcoal text-4xl md:text-5xl leading-tight mb-14"
-            >
-              Sourced from the houses that matter.
-            </h2>
-          </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-0">
-            {fabrics.map(({ name, description }, i) => (
-              <FadeUp key={i} delay={i * 0.08}>
-                <div className="py-8" style={{ borderTop: '1px solid var(--rule)' }}>
-                  <h3 className="font-cormorant font-light text-charcoal text-2xl mb-3">{name}</h3>
-                  <p className="font-jost font-light text-muted text-sm leading-relaxed">
-                    {description}
-                  </p>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Coordinated by design — split section */}
+      {/* Coordinated by design */}
       <section className="bg-charcoal" aria-labelledby="bedding-coordinated-heading">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[560px]">
-          <FadeUp className="relative min-h-[380px] lg:min-h-full overflow-hidden bg-stone order-1">
-            <Image
-              src="/images/bedding/bedding-03.jpg"
-              alt="Custom bedding ensemble and coordinating window treatments designed together as a unified room composition"
-              fill
-              className="object-cover object-center"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </FadeUp>
+        <div className="max-w-8xl mx-auto">
           <FadeUp
             delay={0.15}
-            className="flex flex-col justify-center px-8 md:px-14 lg:px-20 py-20 md:py-28 order-2"
+            className="flex flex-col justify-center px-8 md:px-14 lg:px-20 py-20 md:py-28"
           >
             <SectionLabel>Windows &amp; Bedding</SectionLabel>
             <h2
@@ -212,11 +130,11 @@ export default function BeddingPage() {
         </div>
       </section>
 
-      {/* bedding-04 — split layout: "The details that define a room." */}
-      <section className="bg-linen" aria-labelledby="bedding-details-heading">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[560px]">
+      {/* The details that define a room. */}
+      <section className="bg-linen" aria-labelledby="bedding-details-heading" style={{ borderTop: '1px solid var(--rule)' }}>
+        <div className="max-w-8xl mx-auto">
           <FadeUp
-            className="flex flex-col justify-center px-8 md:px-14 lg:px-20 py-20 md:py-28 order-2 lg:order-1"
+            className="flex flex-col justify-center px-8 md:px-14 lg:px-20 py-20 md:py-28"
           >
             <SectionLabel>Finishing Details</SectionLabel>
             <h2
@@ -236,15 +154,6 @@ export default function BeddingPage() {
               This is not quality control. It is care.
             </p>
           </FadeUp>
-          <FadeUp className="relative min-h-[380px] lg:min-h-full overflow-hidden bg-stone order-1 lg:order-2">
-            <Image
-              src="/images/bedding/bedding-04.jpg"
-              alt="Close-up of hand-finished hem and mitered corner on a custom Belgian linen duvet cover — Drapery Enterprises atelier detail"
-              fill
-              className="object-cover object-center"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </FadeUp>
         </div>
       </section>
 
@@ -257,61 +166,6 @@ export default function BeddingPage() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 via-transparent to-transparent" />
-        <div className="absolute inset-0 flex items-end p-8 md:p-16">
-          <FadeUp>
-            <p className="font-cormorant italic text-off-white text-xl md:text-2xl lg:text-3xl max-w-xl opacity-90 leading-relaxed">
-              Sourced from European mills.
-              <br />
-              Made for your bed.
-            </p>
-          </FadeUp>
-        </div>
-      </section>
-
-      {/* Process note */}
-      <section
-        className="py-20 md:py-28 px-6 md:px-10 bg-stone"
-        aria-labelledby="bedding-process-note"
-      >
-        <FadeUp className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div>
-            <SectionLabel>Process</SectionLabel>
-            <h2
-              id="bedding-process-note"
-              className="font-cormorant font-light text-charcoal text-3xl md:text-4xl leading-tight"
-            >
-              How a bedding project works.
-            </h2>
-          </div>
-          <div className="md:col-span-2 flex flex-col gap-8">
-            {[
-              {
-                step: '01 — Consultation',
-                text: 'We meet in your bedroom. We observe the light, the architecture, your existing furniture and color palette. We listen to how you want the room to feel.',
-              },
-              {
-                step: '02 — Selection',
-                text: 'We bring fabric samples to your home and compose selections specific to your bed. You see them in your light, against your walls, before anything is ordered.',
-              },
-              {
-                step: '03 — Fabrication & Delivery',
-                text: 'Every piece is fabricated to order in our Santa Cruz workroom. Lead time is typically four to six weeks. We deliver and dress the bed.',
-              },
-            ].map(({ step, text }, i) => (
-              <div
-                key={i}
-                className="flex gap-6 py-6"
-                style={{ borderTop: '1px solid var(--rule)' }}
-              >
-                <span className="font-jost font-medium text-[0.625rem] tracking-[0.18em] uppercase text-brass flex-shrink-0 mt-1">
-                  {step}
-                </span>
-                <p className="font-jost font-light text-muted text-sm leading-relaxed">{text}</p>
-              </div>
-            ))}
-          </div>
-        </FadeUp>
       </section>
 
       {/* Testimonial */}
@@ -335,14 +189,14 @@ export default function BeddingPage() {
       >
         <FadeUp className="max-w-2xl mx-auto">
           <h2 className="font-cormorant font-light text-off-white text-4xl md:text-5xl leading-tight mb-6">
-            Begin composing your bed.
+            Begin composing your project.
           </h2>
           <p className="font-jost font-light text-muted text-sm leading-relaxed mb-10 max-w-sm mx-auto">
             A conversation about your room is where every project begins. No obligation,
             no rush.
           </p>
           <Button href="/contact" variant="light">
-            Begin a Consultation
+            Tell us about your project
           </Button>
         </FadeUp>
       </section>

@@ -55,8 +55,8 @@ export default function InquiryForm({ nameLabel = 'Your Name' }: InquiryFormProp
           Thank you.
         </h3>
         <p className="font-jost font-light text-muted text-sm leading-relaxed max-w-sm mx-auto">
-          We&apos;ve received your inquiry. We&apos;ll be in touch within 48 hours to schedule
-          your private consultation.
+          We&apos;ve received your inquiry. We&apos;ll be in touch within 48 hours to begin
+          the conversation.
         </p>
       </div>
     )
@@ -194,7 +194,7 @@ export default function InquiryForm({ nameLabel = 'Your Name' }: InquiryFormProp
           Request a Consultation
         </Button>
         <p className="font-jost font-light text-xs text-muted text-center mt-5 leading-relaxed">
-          No obligation. No rush. We&apos;ll be in touch within 48 hours.
+          No obligation. No rush. We&apos;ll be in touch within 48 hours to begin the conversation.
         </p>
       </div>
     </form>

@@ -211,7 +211,7 @@ export default function AboutPage() {
             Work with us.
           </h2>
           <p className="font-jost font-light text-muted text-sm leading-relaxed mb-10 max-w-xs mx-auto">
-            A private consultation is where every project begins. We&rsquo;d love to hear
+            A consultation is where every project begins. We&rsquo;d love to hear
             about your space.
           </p>
           <Button href="/contact" variant="primary">

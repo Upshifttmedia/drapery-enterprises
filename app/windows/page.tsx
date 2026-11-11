@@ -40,7 +40,7 @@ const treatments = [
   {
     title: 'Cornice Boxes & Valances, Swags and Cascades',
     description:
-      'Custom cornices are upholstered fabric on a board, always one of a kind. Built to suit, we can make them simple or fancy.',
+      'Custom cornices are upholstered fabric on a board, always one of a kind.',
     imageSrc: '/images/windows/cornices.jpg',
     imageAlt:
       'Custom cornice box and valance — upholstered fabric on a board, fabricated in the Drapery Enterprises Santa Cruz workroom',
@@ -49,32 +49,8 @@ const treatments = [
     title: 'Light Upholstery',
     description:
       'Chair pads and headboards upholstered to your exact specifications — any fabric, any finish.',
-    imageSrc: '/images/windows/windows-03.jpg',
-    imageAlt:
-      'Light upholstery — custom chair pad and headboard fabricated in the Drapery Enterprises workroom',
-  },
-]
-
-const materials = [
-  {
-    fabric: 'Linen',
-    description:
-      'Belgian and European linen. The most honest fabric we know — it takes light beautifully, drapes with quiet authority, and ages with dignity.',
-  },
-  {
-    fabric: 'Silk',
-    description:
-      'For rooms that warrant it. We source cultivated and dupioni silks from heritage textile houses for panels that catch light in a way no other fabric does.',
-  },
-  {
-    fabric: 'Performance Fabrics',
-    description:
-      'For coastal environments, high-UV rooms, or households with active lives. Beautiful textiles engineered to outlast the view.',
-  },
-  {
-    fabric: 'Wool & Velvet',
-    description:
-      'Weight, warmth, and depth for rooms that call for it. Cut-velvet and woven wool drapery that makes a room feel complete.',
+    imageSrc: '',
+    imageAlt: '',
   },
 ]
 
@@ -109,23 +85,29 @@ export default function WindowsPage() {
 
           <div className="flex flex-col gap-0">
             {treatments.map((treatment, i) => (
-              <FadeUp key={i} className="grid grid-cols-1 md:grid-cols-2">
-                <div
-                  className={`relative aspect-[4/3] overflow-hidden bg-stone ${
-                    i % 2 !== 0 ? 'md:order-2' : 'md:order-1'
-                  }`}
-                >
-                  <Image
-                    src={treatment.imageSrc}
-                    alt={treatment.imageAlt}
-                    fill
-                    className="object-cover object-center hover:scale-[1.04] transition-transform duration-700"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                </div>
+              <FadeUp key={i} className={treatment.imageSrc ? 'grid grid-cols-1 md:grid-cols-2' : ''}>
+                {treatment.imageSrc && (
+                  <div
+                    className={`relative aspect-[4/3] overflow-hidden bg-stone ${
+                      i % 2 !== 0 ? 'md:order-2' : 'md:order-1'
+                    }`}
+                  >
+                    <Image
+                      src={treatment.imageSrc}
+                      alt={treatment.imageAlt}
+                      fill
+                      className="object-cover object-center hover:scale-[1.04] transition-transform duration-700"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                )}
                 <div
                   className={`flex flex-col justify-center px-8 md:px-14 py-14 md:py-20 bg-linen ${
-                    i % 2 !== 0 ? 'md:order-1' : 'md:order-2'
+                    treatment.imageSrc
+                      ? i % 2 !== 0
+                        ? 'md:order-1'
+                        : 'md:order-2'
+                      : ''
                   }`}
                 >
                   <h3 className="font-cormorant font-light text-charcoal text-3xl md:text-4xl leading-tight mb-4">
@@ -190,41 +172,6 @@ export default function WindowsPage() {
         </div>
       </section>
 
-      {/* Materials */}
-      <section
-        className="py-24 md:py-32 px-6 md:px-10 bg-linen"
-        aria-labelledby="materials-heading"
-      >
-        <div className="max-w-4xl mx-auto">
-          <FadeUp>
-            <SectionLabel>Materials</SectionLabel>
-            <h2
-              id="materials-heading"
-              className="font-cormorant font-light text-charcoal text-4xl md:text-5xl leading-tight mb-14"
-            >
-              Fabric as a design decision.
-            </h2>
-          </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-0">
-            {materials.map(({ fabric, description }, i) => (
-              <FadeUp key={i} delay={i * 0.08}>
-                <div
-                  className="py-8"
-                  style={{ borderTop: '1px solid var(--rule)' }}
-                >
-                  <h3 className="font-cormorant font-light text-charcoal text-2xl mb-3">
-                    {fabric}
-                  </h3>
-                  <p className="font-jost font-light text-muted text-sm leading-relaxed">
-                    {description}
-                  </p>
-                </div>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Testimonial */}
       <section
         className="py-24 md:py-32 px-6 md:px-10 bg-stone"
@@ -249,11 +196,12 @@ export default function WindowsPage() {
             Ready to compose your windows?
           </h2>
           <p className="font-jost font-light text-muted text-sm leading-relaxed mb-10 max-w-xs mx-auto">
-            A private consultation is the first step. We&rsquo;ll visit your space, understand
-            your light, and begin designing.
+            The first step is a conversation. Tell us about your project.
+            We offer a complimentary appointment at our facility. In home or jobsite
+            consultation and check measures also available by appointment.
           </p>
           <Button href="/contact" variant="primary">
-            Begin a Consultation
+            Begin a Conversation
           </Button>
           <p className="font-jost font-light text-xs text-muted mt-8 tracking-wider">
             Serving Monterey Bay &nbsp;·&nbsp; Santa Cruz &nbsp;·&nbsp; Bay Area

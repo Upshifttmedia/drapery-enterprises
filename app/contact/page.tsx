@@ -44,7 +44,7 @@ export default function ContactPage() {
         aria-labelledby="contact-heading"
       >
         <FadeUp className="max-w-8xl mx-auto">
-          <SectionLabel>Private Consultation</SectionLabel>
+          <SectionLabel>Consultation</SectionLabel>
           <h1
             id="contact-heading"
             className="font-cormorant font-light text-charcoal text-5xl md:text-6xl lg:text-7xl leading-tight max-w-2xl"

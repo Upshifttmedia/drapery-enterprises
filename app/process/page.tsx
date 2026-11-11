@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import HeroSection from '@/components/HeroSection'
 import SectionLabel from '@/components/SectionLabel'
 import FadeUp from '@/components/FadeUp'
@@ -15,7 +14,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How long does a typical project take from inquiry to install?',
-    a: 'Most projects run six to ten weeks from initial consultation to installation. Complex multi-room projects may run longer. We provide a specific timeline during the design presentation stage.',
+    a: 'Typical fabrication projects are 2 to 6 weeks depending on the scope of work.',
   },
   {
     q: 'Do you work on single rooms or whole-home projects?',
@@ -23,7 +22,7 @@ const faqs = [
   },
   {
     q: 'What is your service area?',
-    a: 'We serve the Santa Cruz and Monterey Bay corridor, the Peninsula, and the greater Bay Area. For large or multi-location projects, we have worked as far as Napa and Los Angeles.',
+    a: 'We serve the Santa Cruz and Monterey Bay corridor and the greater Bay Area. We work closely with out-of-state designers via phone, email, and occasional site visits to fulfill custom design needs for secondary homes in our local service areas. Please let us know how we can assist you with your upcoming project.',
   },
   {
     q: 'Is there a minimum project size?',
@@ -39,7 +38,7 @@ export default function ProcessPage() {
         imageAlt="Fabric samples and workroom drawings laid out during the design presentation stage at Drapery Enterprises"
         label="The Process"
         headline="A process built for work that lasts."
-        subheadline="Six steps, no shortcuts. From first conversation to finished installation."
+        subheadline="No shortcuts. From first conversation to finished installation."
         ctaText="Begin a Consultation"
         ctaHref="/contact"
         minHeight="min-h-[70vh]"
@@ -66,18 +65,6 @@ export default function ProcessPage() {
             stand behind.
           </p>
         </FadeUp>
-      </section>
-
-      {/* Workroom image */}
-      <section className="relative h-[50vh] md:h-[65vh] overflow-hidden bg-stone">
-        <Image
-          src="/images/about/about-02.jpg"
-          alt="The Drapery Enterprises workroom in Santa Cruz — fabrication tables, fabric rolls, and hand tools for custom window treatments"
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-charcoal/25" />
       </section>
 
       {/* FAQ */}

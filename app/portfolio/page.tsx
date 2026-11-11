@@ -102,7 +102,7 @@ export default function PortfolioPage() {
       {/* Instagram note */}
       <section
         className="py-16 md:py-20 px-6 md:px-10 bg-stone text-center"
-        style={{ borderTop: '1px solid var(--rule)' }}
+        style={{ borderTop: '1px solid var(--rule)', display: 'none' }}
       >
         <FadeUp className="max-w-xl mx-auto">
           <p className="font-cormorant font-light text-charcoal text-2xl md:text-3xl leading-relaxed mb-6">

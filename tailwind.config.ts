@@ -20,6 +20,13 @@ const config: Config = {
         cormorant: ['var(--font-cormorant)', 'Georgia', 'serif'],
         jost: ['var(--font-jost)', 'system-ui', 'sans-serif'],
       },
+      fontSize: {
+        sm: ['0.9375rem', { lineHeight: '1.65' }],
+        base: ['1rem', { lineHeight: '1.7' }],
+      },
+      lineHeight: {
+        relaxed: '1.7',
+      },
       maxWidth: {
         '8xl': '88rem',
       },

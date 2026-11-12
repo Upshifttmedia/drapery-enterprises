@@ -55,14 +55,15 @@ export default function Nav() {
         }`}
         style={{ borderBottom: '1px solid', borderColor: scrolled ? 'var(--rule)' : 'transparent' }}
       >
-        <div className="max-w-8xl mx-auto px-6 md:px-10 h-16 md:h-20 flex items-center justify-between">
-          <Link href="/" className="relative z-10">
+        <div className="max-w-8xl mx-auto px-6 md:px-10 h-20 md:h-24 flex items-center justify-between">
+          <Link href="/" className="relative z-10 flex items-center">
             <Image
               src="/images/DE_logo.png"
               alt="Drapery Enterprises"
               height={72}
               width={300}
-              style={{ height: 72, width: 'auto' }}
+              className="h-14 md:h-[72px] w-auto"
+              style={{ width: 'auto' }}
               priority
             />
           </Link>
